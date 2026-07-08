@@ -1,0 +1,10 @@
+Application,Approach,Generated test cases,Valid JSON responses,Experimental runs
+Moodle,AI Advanced,39,3,3
+Moodle,AI Basic,75,3,3
+Moodle,LLM-assisted MBT,53,3,3
+OpenCart,AI Advanced,48,3,3
+OpenCart,AI Basic,72,3,3
+OpenCart,LLM-assisted MBT,49,3,3
+OpenEMR,AI Advanced,52,3,3
+OpenEMR,AI Basic,75,3,3
+OpenEMR,LLM-assisted MBT,58,3,3
