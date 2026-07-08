@@ -1,0 +1,294 @@
+{
+  "tests": [
+    {
+      "id": "TC1",
+      "requirement": "User can register account",
+      "title": "Register Account Test",
+      "preconditions": "No existing account exists",
+      "steps": [
+        {
+          "step": "Open registration page"
+        },
+        {
+          "step": "Enter valid email and password"
+        },
+        {
+          "step": "Submit registration form"
+        }
+      ],
+      "expected_result": "Account created successfully",
+      "priority": "High",
+      "test_type": "Positive"
+    },
+    {
+      "id": "TC2",
+      "requirement": "User can log in",
+      "title": "Login Test",
+      "preconditions": "Valid account exists",
+      "steps": [
+        {
+          "step": "Open login page"
+        },
+        {
+          "step": "Enter valid email and password"
+        },
+        {
+          "step": "Submit login form"
+        }
+      ],
+      "expected_result": "Logged in successfully",
+      "priority": "High",
+      "test_type": "Positive"
+    },
+    {
+      "id": "TC3",
+      "requirement": "System rejects invalid login",
+      "title": "Invalid Login Test",
+      "preconditions": "Invalid account exists",
+      "steps": [
+        {
+          "step": "Open login page"
+        },
+        {
+          "step": "Enter invalid email and password"
+        },
+        {
+          "step": "Submit login form"
+        }
+      ],
+      "expected_result": "Login failed due to invalid credentials",
+      "priority": "High",
+      "test_type": "Negative"
+    },
+    {
+      "id": "TC4",
+      "requirement": "User can browse products",
+      "title": "Browse Products Test",
+      "preconditions": "Product catalog exists",
+      "steps": [
+        {
+          "step": "Open product catalog page"
+        },
+        {
+          "step": "Browse through products"
+        }
+      ],
+      "expected_result": "Products displayed correctly",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "TC5",
+      "requirement": "User can search products",
+      "title": "Search Products Test",
+      "preconditions": "Product catalog exists",
+      "steps": [
+        {
+          "step": "Open product catalog page"
+        },
+        {
+          "step": "Enter valid search query"
+        },
+        {
+          "step": "Submit search form"
+        }
+      ],
+      "expected_result": "Search results displayed correctly",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "TC6",
+      "requirement": "Search returns empty result for invalid query",
+      "title": "Invalid Search Test",
+      "preconditions": "Product catalog exists",
+      "steps": [
+        {
+          "step": "Open product catalog page"
+        },
+        {
+          "step": "Enter invalid search query"
+        },
+        {
+          "step": "Submit search form"
+        }
+      ],
+      "expected_result": "No results found for invalid query",
+      "priority": "Medium",
+      "test_type": "Negative"
+    },
+    {
+      "id": "TC7",
+      "requirement": "User can view product details",
+      "title": "View Product Details Test",
+      "preconditions": "Product exists",
+      "steps": [
+        {
+          "step": "Open product catalog page"
+        },
+        {
+          "step": "Select a product"
+        },
+        {
+          "step": "View product details"
+        }
+      ],
+      "expected_result": "Product details displayed correctly",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "TC8",
+      "requirement": "User can add product to cart",
+      "title": "Add Product to Cart Test",
+      "preconditions": "Product exists and user is logged in",
+      "steps": [
+        {
+          "step": "Open product catalog page"
+        },
+        {
+          "step": "Select a product"
+        },
+        {
+          "step": "Add product to cart"
+        }
+      ],
+      "expected_result": "Product added to cart successfully",
+      "priority": "High",
+      "test_type": "Positive"
+    },
+    {
+      "id": "TC9",
+      "requirement": "User can update cart quantity",
+      "title": "Update Cart Quantity Test",
+      "preconditions": "Product in cart and user is logged in",
+      "steps": [
+        {
+          "step": "Open cart page"
+        },
+        {
+          "step": "Update product quantity"
+        }
+      ],
+      "expected_result": "Cart updated successfully",
+      "priority": "High",
+      "test_type": "Positive"
+    },
+    {
+      "id": "TC10",
+      "requirement": "User can remove product from cart",
+      "title": "Remove Product from Cart Test",
+      "preconditions": "Product in cart and user is logged in",
+      "steps": [
+        {
+          "step": "Open cart page"
+        },
+        {
+          "step": "Remove product from cart"
+        }
+      ],
+      "expected_result": "Product removed from cart successfully",
+      "priority": "High",
+      "test_type": "Positive"
+    },
+    {
+      "id": "TC11",
+      "requirement": "User can proceed to checkout",
+      "title": "Proceed to Checkout Test",
+      "preconditions": "Cart is not empty and user is logged in",
+      "steps": [
+        {
+          "step": "Open cart page"
+        },
+        {
+          "step": "Proceed to checkout"
+        }
+      ],
+      "expected_result": "Checkout page displayed correctly",
+      "priority": "High",
+      "test_type": "Positive"
+    },
+    {
+      "id": "TC12",
+      "requirement": "Shipping address validation",
+      "title": "Shipping Address Validation Test",
+      "preconditions": "User is logged in and has a cart",
+      "steps": [
+        {
+          "step": "Open checkout page"
+        },
+        {
+          "step": "Enter invalid shipping address"
+        }
+      ],
+      "expected_result": "Invalid shipping address detected",
+      "priority": "High",
+      "test_type": "Negative"
+    },
+    {
+      "id": "TC13",
+      "requirement": "Payment processing",
+      "title": "Payment Processing Test",
+      "preconditions": "User is logged in and has a cart",
+      "steps": [
+        {
+          "step": "Open checkout page"
+        },
+        {
+          "step": "Enter valid payment information"
+        }
+      ],
+      "expected_result": "Payment processed successfully",
+      "priority": "High",
+      "test_type": "Positive"
+    },
+    {
+      "id": "TC14",
+      "requirement": "Order confirmation",
+      "title": "Order Confirmation Test",
+      "preconditions": "User is logged in and has a cart",
+      "steps": [
+        {
+          "step": "Open checkout page"
+        },
+        {
+          "step": "Place order"
+        }
+      ],
+      "expected_result": "Order confirmed successfully",
+      "priority": "High",
+      "test_type": "Positive"
+    },
+    {
+      "id": "TC15",
+      "requirement": "Order history view",
+      "title": "Order History View Test",
+      "preconditions": "User is logged in and has a cart",
+      "steps": [
+        {
+          "step": "Open order history page"
+        }
+      ],
+      "expected_result": "Order history displayed correctly",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "TC16",
+      "requirement": "User can log out",
+      "title": "Log Out Test",
+      "preconditions": "User is logged in",
+      "steps": [
+        {
+          "step": "Open login page"
+        },
+        {
+          "step": "Click log out button"
+        }
+      ],
+      "expected_result": "Logged out successfully",
+      "priority": "High",
+      "test_type": "Positive"
+    }
+  ]
+}

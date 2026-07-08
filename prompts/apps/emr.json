@@ -1,0 +1,18 @@
+{
+  "app": "EMR (Electronic Medical Records)",
+  "context": "System for managing patient records, prescriptions, visits, and medical history.",
+  "users": [
+    "doctor",
+    "nurse",
+    "patient",
+    "administrator"
+  ],
+
+  "main_features": [
+    "patient search",
+    "appointments",
+    "medical history",
+    "prescriptions",
+    "lab results"
+  ]
+}

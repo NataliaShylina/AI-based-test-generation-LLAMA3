@@ -1,0 +1,242 @@
+{
+  "tests": [
+    {
+      "id": "1",
+      "requirement": "User can log in with valid credentials",
+      "title": "Valid Login Test",
+      "preconditions": "",
+      "steps": [
+        {
+          "step": "Enter valid username and password"
+        }
+      ],
+      "expected_result": "Login is successful",
+      "priority": "High",
+      "test_type": "Positive"
+    },
+    {
+      "id": "2",
+      "requirement": "User can log in with valid credentials",
+      "title": "Invalid Login Test",
+      "preconditions": "",
+      "steps": [
+        {
+          "step": "Enter invalid username and password"
+        }
+      ],
+      "expected_result": "Login is rejected",
+      "priority": "High",
+      "test_type": "Negative"
+    },
+    {
+      "id": "3",
+      "requirement": "User can log in with valid credentials",
+      "title": "Boundary Login Test",
+      "preconditions": "",
+      "steps": [
+        {
+          "step": "Enter username and password with special characters"
+        }
+      ],
+      "expected_result": "Login is successful",
+      "priority": "Medium",
+      "test_type": "Boundary"
+    },
+    {
+      "id": "4",
+      "requirement": "System rejects invalid login",
+      "title": "Invalid Login Test",
+      "preconditions": "",
+      "steps": [
+        {
+          "step": "Enter invalid username and password"
+        }
+      ],
+      "expected_result": "Login is rejected",
+      "priority": "High",
+      "test_type": "Positive"
+    },
+    {
+      "id": "5",
+      "requirement": "User can browse available courses",
+      "title": "Available Courses Test",
+      "preconditions": "",
+      "steps": [
+        {
+          "step": "Browse the course list"
+        }
+      ],
+      "expected_result": "List of available courses is displayed",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "6",
+      "requirement": "User can search for courses",
+      "title": "Search Courses Test",
+      "preconditions": "",
+      "steps": [
+        {
+          "step": "Enter a valid course name in the search bar"
+        }
+      ],
+      "expected_result": "List of matching courses is displayed",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "7",
+      "requirement": "Search returns no results for invalid query",
+      "title": "Invalid Search Test",
+      "preconditions": "",
+      "steps": [
+        {
+          "step": "Enter an invalid course name in the search bar"
+        }
+      ],
+      "expected_result": "No matching courses are displayed",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "8",
+      "requirement": "User can enroll in course",
+      "title": "Enroll Course Test",
+      "preconditions": "",
+      "steps": [
+        {
+          "step": "Select a valid course and click enroll"
+        }
+      ],
+      "expected_result": "Course enrollment is successful",
+      "priority": "High",
+      "test_type": "Positive"
+    },
+    {
+      "id": "9",
+      "requirement": "System prevents double enrollment",
+      "title": "Double Enrollment Test",
+      "preconditions": "",
+      "steps": [
+        {
+          "step": "Select a valid course and click enroll (twice)"
+        }
+      ],
+      "expected_result": "Error message indicating duplicate enrollment is displayed",
+      "priority": "High",
+      "test_type": "Positive"
+    },
+    {
+      "id": "10",
+      "requirement": "User can open enrolled course",
+      "title": "Open Enrolled Course Test",
+      "preconditions": "",
+      "steps": [
+        {
+          "step": "Select a valid course and click enroll, then open the course"
+        }
+      ],
+      "expected_result": "Course materials are displayed",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "11",
+      "requirement": "User can view course materials",
+      "title": "View Course Materials Test",
+      "preconditions": "",
+      "steps": [
+        {
+          "step": "Select a valid course and click enroll, then open the course and view materials"
+        }
+      ],
+      "expected_result": "Course materials are displayed",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "12",
+      "requirement": "User can download course resources",
+      "title": "Download Course Resources Test",
+      "preconditions": "",
+      "steps": [
+        {
+          "step": "Select a valid course and click enroll, then open the course and download resources"
+        }
+      ],
+      "expected_result": "Course resources are downloaded successfully",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "13",
+      "requirement": "User can view assignment list",
+      "title": "View Assignment List Test",
+      "preconditions": "",
+      "steps": [
+        {
+          "step": "Select a valid course and click enroll, then open the course and view assignments"
+        }
+      ],
+      "expected_result": "Assignment list is displayed",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "14",
+      "requirement": "Access restrictions for non-enrolled users",
+      "title": "Non-Enrolled Access Test",
+      "preconditions": "",
+      "steps": [
+        {
+          "step": "Attempt to access a course without enrollment"
+        }
+      ],
+      "expected_result": "Error message indicating restricted access is displayed",
+      "priority": "High",
+      "test_type": "Positive"
+    },
+    {
+      "id": "15",
+      "requirement": "Session timeout handling",
+      "title": "Session Timeout Test",
+      "preconditions": "",
+      "steps": [
+        {
+          "step": "Wait for the session to timeout, then attempt to access a course"
+        }
+      ],
+      "expected_result": "Error message indicating session timeout is displayed",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "16",
+      "requirement": "Password reset flow",
+      "title": "Password Reset Test",
+      "preconditions": "",
+      "steps": [
+        {
+          "step": "Initiate the password reset process and follow the prompts"
+        }
+      ],
+      "expected_result": "New password is set successfully",
+      "priority": "High",
+      "test_type": "Positive"
+    },
+    {
+      "id": "17",
+      "requirement": "User can log out successfully",
+      "title": "Log Out Test",
+      "preconditions": "",
+      "steps": [
+        {
+          "step": "Click the logout button"
+        }
+      ],
+      "expected_result": "Logout is successful",
+      "priority": "High",
+      "test_type": "Positive"
+    }
+  ]
+}

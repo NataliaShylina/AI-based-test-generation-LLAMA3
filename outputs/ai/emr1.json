@@ -1,0 +1,387 @@
+{
+  "tests": [
+    {
+      "id": "Test1",
+      "requirement": "User can log in to system",
+      "title": "Successful login",
+      "preconditions": "No previous login session exists",
+      "steps": [
+        {
+          "step": "Enter valid username and password"
+        },
+        {
+          "step": "Click the login button"
+        }
+      ],
+      "expected_result": "System logs user in successfully",
+      "priority": "High",
+      "test_type": "Positive"
+    },
+    {
+      "id": "Test2",
+      "requirement": "User can log in to system",
+      "title": "Failed login with invalid credentials",
+      "preconditions": "No previous login session exists",
+      "steps": [
+        {
+          "step": "Enter invalid username and password"
+        },
+        {
+          "step": "Click the login button"
+        }
+      ],
+      "expected_result": "System rejects login attempt",
+      "priority": "High",
+      "test_type": "Negative"
+    },
+    {
+      "id": "Test3",
+      "requirement": "User can search patient by name",
+      "title": "Successful patient search by name",
+      "preconditions": "Patient exists in the system",
+      "steps": [
+        {
+          "step": "Enter valid patient name"
+        },
+        {
+          "step": "Click the search button"
+        }
+      ],
+      "expected_result": "System returns patient profile",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "Test4",
+      "requirement": "User can search patient by SSN",
+      "title": "Successful patient search by SSN",
+      "preconditions": "Patient exists in the system",
+      "steps": [
+        {
+          "step": "Enter valid patient SSN"
+        },
+        {
+          "step": "Click the search button"
+        }
+      ],
+      "expected_result": "System returns patient profile",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "Test5",
+      "requirement": "User can search patient by name",
+      "title": "Failed patient search with invalid name",
+      "preconditions": "Patient does not exist in the system",
+      "steps": [
+        {
+          "step": "Enter invalid patient name"
+        },
+        {
+          "step": "Click the search button"
+        }
+      ],
+      "expected_result": "System returns no result",
+      "priority": "Medium",
+      "test_type": "Negative"
+    },
+    {
+      "id": "Test6",
+      "requirement": "User can open patient profile",
+      "title": "Successful patient profile opening",
+      "preconditions": "Patient exists in the system",
+      "steps": [
+        {
+          "step": "Click on patient profile link"
+        }
+      ],
+      "expected_result": "System displays patient profile",
+      "priority": "Low",
+      "test_type": "Positive"
+    },
+    {
+      "id": "Test7",
+      "requirement": "User can view patient demographics",
+      "title": "Successful patient demographics viewing",
+      "preconditions": "Patient exists in the system",
+      "steps": [
+        {
+          "step": "Click on patient demographics link"
+        }
+      ],
+      "expected_result": "System displays patient demographics",
+      "priority": "Low",
+      "test_type": "Positive"
+    },
+    {
+      "id": "Test8",
+      "requirement": "User can view patient visit history",
+      "title": "Successful patient visit history viewing",
+      "preconditions": "Patient exists in the system",
+      "steps": [
+        {
+          "step": "Click on patient visit history link"
+        }
+      ],
+      "expected_result": "System displays patient visit history",
+      "priority": "Low",
+      "test_type": "Positive"
+    },
+    {
+      "id": "Test9",
+      "requirement": "User can open encounter record",
+      "title": "Successful encounter record opening",
+      "preconditions": "Encounter exists in the system",
+      "steps": [
+        {
+          "step": "Click on encounter record link"
+        }
+      ],
+      "expected_result": "System displays encounter record",
+      "priority": "Low",
+      "test_type": "Positive"
+    },
+    {
+      "id": "Test10",
+      "requirement": "User can view medical history",
+      "title": "Successful medical history viewing",
+      "preconditions": "Patient exists in the system",
+      "steps": [
+        {
+          "step": "Click on patient medical history link"
+        }
+      ],
+      "expected_result": "System displays patient medical history",
+      "priority": "Low",
+      "test_type": "Positive"
+    },
+    {
+      "id": "Test11",
+      "requirement": "User can view prescriptions",
+      "title": "Successful prescription viewing",
+      "preconditions": "Patient exists in the system",
+      "steps": [
+        {
+          "step": "Click on patient prescriptions link"
+        }
+      ],
+      "expected_result": "System displays patient prescriptions",
+      "priority": "Low",
+      "test_type": "Positive"
+    },
+    {
+      "id": "Test12",
+      "requirement": "Add clinical notes",
+      "title": "Successful clinical note addition",
+      "preconditions": "Patient exists in the system",
+      "steps": [
+        {
+          "step": "Enter valid clinical note"
+        },
+        {
+          "step": "Click the add button"
+        }
+      ],
+      "expected_result": "System adds clinical note successfully",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "Test13",
+      "requirement": "Prescribe medication",
+      "title": "Successful prescription addition",
+      "preconditions": "Patient exists in the system",
+      "steps": [
+        {
+          "step": "Enter valid prescription"
+        },
+        {
+          "step": "Click the add button"
+        }
+      ],
+      "expected_result": "System adds prescription successfully",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "Test14",
+      "requirement": "Allergy checking",
+      "title": "Successful allergy check",
+      "preconditions": "Patient exists in the system",
+      "steps": [
+        {
+          "step": "Enter valid patient information"
+        },
+        {
+          "step": "Click the check button"
+        }
+      ],
+      "expected_result": "System displays patient allergies",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "Test15",
+      "requirement": "Appointment overview",
+      "title": "Successful appointment overview",
+      "preconditions": "Patient exists in the system",
+      "steps": [
+        {
+          "step": "Click on patient appointments link"
+        }
+      ],
+      "expected_result": "System displays patient appointments",
+      "priority": "Low",
+      "test_type": "Positive"
+    },
+    {
+      "id": "Test16",
+      "requirement": "Access control for patients",
+      "title": "Successful patient access control",
+      "preconditions": "Patient exists in the system",
+      "steps": [
+        {
+          "step": "Enter valid patient credentials"
+        },
+        {
+          "step": "Click the login button"
+        }
+      ],
+      "expected_result": "System logs patient in successfully",
+      "priority": "High",
+      "test_type": "Positive"
+    },
+    {
+      "id": "Test17",
+      "requirement": "User can log out",
+      "title": "Successful logout",
+      "preconditions": "User is logged in",
+      "steps": [
+        {
+          "step": "Click the logout button"
+        }
+      ],
+      "expected_result": "System logs user out successfully",
+      "priority": "High",
+      "test_type": "Positive"
+    },
+    {
+      "id": "Test18",
+      "requirement": "User can log in to system",
+      "title": "Failed login with invalid credentials",
+      "preconditions": "No previous login session exists",
+      "steps": [
+        {
+          "step": "Enter invalid username and password"
+        },
+        {
+          "step": "Click the login button"
+        }
+      ],
+      "expected_result": "System rejects login attempt",
+      "priority": "High",
+      "test_type": "Negative"
+    },
+    {
+      "id": "Test19",
+      "requirement": "User can search patient by name",
+      "title": "Failed patient search with invalid name",
+      "preconditions": "Patient does not exist in the system",
+      "steps": [
+        {
+          "step": "Enter invalid patient name"
+        },
+        {
+          "step": "Click the search button"
+        }
+      ],
+      "expected_result": "System returns no result",
+      "priority": "Medium",
+      "test_type": "Negative"
+    },
+    {
+      "id": "Test20",
+      "requirement": "User can open patient profile",
+      "title": "Failed patient profile opening with invalid link",
+      "preconditions": "Invalid patient profile link exists",
+      "steps": [
+        {
+          "step": "Click on invalid patient profile link"
+        }
+      ],
+      "expected_result": "System displays error message",
+      "priority": "Low",
+      "test_type": "Negative"
+    },
+    {
+      "id": "Test21",
+      "requirement": "User can view patient demographics",
+      "title": "Failed patient demographics viewing with invalid link",
+      "preconditions": "Invalid patient demographics link exists",
+      "steps": [
+        {
+          "step": "Click on invalid patient demographics link"
+        }
+      ],
+      "expected_result": "System displays error message",
+      "priority": "Low",
+      "test_type": "Negative"
+    },
+    {
+      "id": "Test22",
+      "requirement": "User can view patient visit history",
+      "title": "Failed patient visit history viewing with invalid link",
+      "preconditions": "Invalid patient visit history link exists",
+      "steps": [
+        {
+          "step": "Click on invalid patient visit history link"
+        }
+      ],
+      "expected_result": "System displays error message",
+      "priority": "Low",
+      "test_type": "Negative"
+    },
+    {
+      "id": "Test23",
+      "requirement": "User can open encounter record",
+      "title": "Failed encounter record opening with invalid link",
+      "preconditions": "Invalid encounter record link exists",
+      "steps": [
+        {
+          "step": "Click on invalid encounter record link"
+        }
+      ],
+      "expected_result": "System displays error message",
+      "priority": "Low",
+      "test_type": "Negative"
+    },
+    {
+      "id": "Test24",
+      "requirement": "User can view medical history",
+      "title": "Failed medical history viewing with invalid link",
+      "preconditions": "Invalid medical history link exists",
+      "steps": [
+        {
+          "step": "Click on invalid medical history link"
+        }
+      ],
+      "expected_result": "System displays error message",
+      "priority": "Low",
+      "test_type": "Negative"
+    },
+    {
+      "id": "Test25",
+      "requirement": "User can view prescriptions",
+      "title": "Failed prescription viewing with invalid link",
+      "preconditions": "Invalid prescription link exists",
+      "steps": [
+        {
+          "step": "Click on invalid prescription link"
+        }
+      ],
+      "expected_result": "System displays error message",
+      "priority": "Low",
+      "test_type": "Negative"
+    }
+  ]
+}

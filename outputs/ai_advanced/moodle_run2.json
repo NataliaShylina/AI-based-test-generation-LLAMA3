@@ -1,0 +1,222 @@
+{
+  "tests": [
+    {
+      "id": "1",
+      "requirement": "User can log in with valid credentials",
+      "title": "Valid Login Test",
+      "preconditions": "No preconditions",
+      "steps": [
+        {
+          "step": "Enter valid username and password"
+        },
+        {
+          "step": "Click the login button"
+        }
+      ],
+      "expected_result": "User is logged in successfully",
+      "priority": "High",
+      "test_type": "Positive"
+    },
+    {
+      "id": "2",
+      "requirement": "System rejects invalid login",
+      "title": "Invalid Login Test",
+      "preconditions": "No preconditions",
+      "steps": [
+        {
+          "step": "Enter invalid username and password"
+        },
+        {
+          "step": "Click the login button"
+        }
+      ],
+      "expected_result": "Error message displayed, user not logged in",
+      "priority": "High",
+      "test_type": "Negative"
+    },
+    {
+      "id": "3",
+      "requirement": "User can browse available courses",
+      "title": "Course Browsing Test",
+      "preconditions": "User is logged in",
+      "steps": [
+        {
+          "step": "Navigate to course list page"
+        },
+        {
+          "step": "Verify that all courses are displayed"
+        }
+      ],
+      "expected_result": "All courses are displayed",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "4",
+      "requirement": "User can search for courses",
+      "title": "Course Search Test",
+      "preconditions": "User is logged in",
+      "steps": [
+        {
+          "step": "Enter a valid course name in the search bar"
+        },
+        {
+          "step": "Click the search button"
+        }
+      ],
+      "expected_result": "Relevant courses are displayed",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "5",
+      "requirement": "Search returns no results for invalid query",
+      "title": "Invalid Search Test",
+      "preconditions": "User is logged in",
+      "steps": [
+        {
+          "step": "Enter an invalid course name in the search bar"
+        },
+        {
+          "step": "Click the search button"
+        }
+      ],
+      "expected_result": "No courses are displayed",
+      "priority": "Medium",
+      "test_type": "Negative"
+    },
+    {
+      "id": "6",
+      "requirement": "User can enroll in course",
+      "title": "Course Enrollment Test",
+      "preconditions": "User is logged in and has not enrolled in the course",
+      "steps": [
+        {
+          "step": "Navigate to course details page"
+        },
+        {
+          "step": "Click the enroll button"
+        }
+      ],
+      "expected_result": "User is enrolled in the course",
+      "priority": "High",
+      "test_type": "Positive"
+    },
+    {
+      "id": "7",
+      "requirement": "System prevents double enrollment",
+      "title": "Double Enrollment Test",
+      "preconditions": "User is logged in and has already enrolled in the course",
+      "steps": [
+        {
+          "step": "Navigate to course details page"
+        },
+        {
+          "step": "Click the enroll button again"
+        }
+      ],
+      "expected_result": "Error message displayed, user not re-enrolled",
+      "priority": "High",
+      "test_type": "Negative"
+    },
+    {
+      "id": "8",
+      "requirement": "User can open enrolled course",
+      "title": "Course Opening Test",
+      "preconditions": "User is logged in and has enrolled in the course",
+      "steps": [
+        {
+          "step": "Navigate to course details page"
+        },
+        {
+          "step": "Click the course link"
+        }
+      ],
+      "expected_result": "Course materials are displayed",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "9",
+      "requirement": "User can view assignment list",
+      "title": "Assignment List Test",
+      "preconditions": "User is logged in and has enrolled in the course",
+      "steps": [
+        {
+          "step": "Navigate to course details page"
+        },
+        {
+          "step": "Click the assignments link"
+        }
+      ],
+      "expected_result": "Assignment list is displayed",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "10",
+      "requirement": "Access restrictions for non-enrolled users",
+      "title": "Non-Enrolled Access Test",
+      "preconditions": "User is logged in but has not enrolled in the course",
+      "steps": [
+        {
+          "step": "Navigate to course details page"
+        },
+        {
+          "step": "Try to access course materials"
+        }
+      ],
+      "expected_result": "Error message displayed, user cannot access",
+      "priority": "High",
+      "test_type": "Negative"
+    },
+    {
+      "id": "11",
+      "requirement": "Session timeout handling",
+      "title": "Session Timeout Test",
+      "preconditions": "User is logged in and has been inactive for some time",
+      "steps": [
+        {
+          "step": "Wait for session timeout to occur"
+        },
+        {
+          "step": "Try to access course materials"
+        }
+      ],
+      "expected_result": "Error message displayed, user must log back in",
+      "priority": "Medium",
+      "test_type": "Boundary"
+    },
+    {
+      "id": "12",
+      "requirement": "Password reset flow",
+      "title": "Password Reset Test",
+      "preconditions": "User is logged out and has forgotten their password",
+      "steps": [
+        {
+          "step": "Navigate to password reset page"
+        },
+        {
+          "step": "Enter valid username and new password"
+        }
+      ],
+      "expected_result": "User's password is updated successfully",
+      "priority": "High",
+      "test_type": "Positive"
+    },
+    {
+      "id": "13",
+      "requirement": "User can log out successfully",
+      "title": "Logout Test",
+      "preconditions": "User is logged in",
+      "steps": [
+        {
+          "step": "Click the logout button"
+        }
+      ],
+      "expected_result": "User is logged out successfully",
+      "priority": "High",
+      "test_type": "Positive"
+    }
+  ]
+}

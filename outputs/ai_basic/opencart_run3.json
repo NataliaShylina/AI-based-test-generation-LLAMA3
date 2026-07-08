@@ -1,0 +1,244 @@
+{
+  "tests": [
+    {
+      "id": "1",
+      "requirement": "User can register account",
+      "title": "Register a new user",
+      "preconditions": "None",
+      "steps": "Enter valid email and password, submit registration form.",
+      "expected_result": "Account created successfully",
+      "priority": "High",
+      "test_type": "Positive"
+    },
+    {
+      "id": "2",
+      "requirement": "User can log in",
+      "title": "Log in with existing account",
+      "preconditions": "Registered user exists",
+      "steps": "Enter valid email and password, submit login form.",
+      "expected_result": "Logged in successfully",
+      "priority": "High",
+      "test_type": "Positive"
+    },
+    {
+      "id": "3",
+      "requirement": "System rejects invalid login",
+      "title": "Invalid login attempt",
+      "preconditions": "No registered user exists",
+      "steps": "Enter invalid email and password, submit login form.",
+      "expected_result": "Login failed due to invalid credentials",
+      "priority": "High",
+      "test_type": "Negative"
+    },
+    {
+      "id": "4",
+      "requirement": "User can browse products",
+      "title": "Browse products",
+      "preconditions": "Product catalog exists",
+      "steps": "Navigate to product list, select a product.",
+      "expected_result": "Product details displayed",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "5",
+      "requirement": "User can search products",
+      "title": "Search for products",
+      "preconditions": "Product catalog exists",
+      "steps": "Enter valid search query, submit search form.",
+      "expected_result": "Relevant product results displayed",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "6",
+      "requirement": "Search returns empty result for invalid query",
+      "title": "Invalid search query",
+      "preconditions": "Product catalog exists",
+      "steps": "Enter invalid search query, submit search form.",
+      "expected_result": "No results displayed",
+      "priority": "Medium",
+      "test_type": "Negative"
+    },
+    {
+      "id": "7",
+      "requirement": "User can view product details",
+      "title": "View product details",
+      "preconditions": "Product exists",
+      "steps": "Navigate to product page, view details.",
+      "expected_result": "Product details displayed",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "8",
+      "requirement": "User can add product to cart",
+      "title": "Add product to cart",
+      "preconditions": "Product exists and user has a cart",
+      "steps": "Select product, click 'Add to Cart'.",
+      "expected_result": "Product added to cart successfully",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "9",
+      "requirement": "User can update cart quantity",
+      "title": "Update cart quantity",
+      "preconditions": "User has a cart with products",
+      "steps": "Select product, adjust quantity, submit.",
+      "expected_result": "Cart updated successfully",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "10",
+      "requirement": "User can remove product from cart",
+      "title": "Remove product from cart",
+      "preconditions": "User has a cart with products",
+      "steps": "Select product, click 'Remove'.",
+      "expected_result": "Product removed from cart successfully",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "11",
+      "requirement": "User can proceed to checkout",
+      "title": "Proceed to checkout",
+      "preconditions": "User has a cart with products",
+      "steps": "Click 'Checkout', select shipping address.",
+      "expected_result": "Shipping address selected successfully",
+      "priority": "High",
+      "test_type": "Positive"
+    },
+    {
+      "id": "12",
+      "requirement": "Shipping address validation",
+      "title": "Invalid shipping address",
+      "preconditions": "User has a cart with products",
+      "steps": "Enter invalid shipping address, submit.",
+      "expected_result": "Address validation failed",
+      "priority": "High",
+      "test_type": "Negative"
+    },
+    {
+      "id": "13",
+      "requirement": "Payment processing",
+      "title": "Make payment",
+      "preconditions": "User has a cart with products and valid payment method",
+      "steps": "Select payment method, submit payment.",
+      "expected_result": "Payment processed successfully",
+      "priority": "High",
+      "test_type": "Positive"
+    },
+    {
+      "id": "14",
+      "requirement": "Order confirmation",
+      "title": "Order confirmed",
+      "preconditions": "User has a cart with products and valid payment method",
+      "steps": "Submit order, confirm order details.",
+      "expected_result": "Order confirmed successfully",
+      "priority": "High",
+      "test_type": "Positive"
+    },
+    {
+      "id": "15",
+      "requirement": "Order history view",
+      "title": "View order history",
+      "preconditions": "User has placed orders",
+      "steps": "Navigate to order history, view orders.",
+      "expected_result": "Order history displayed successfully",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "16",
+      "requirement": "User can log out",
+      "title": "Log out",
+      "preconditions": "User is logged in",
+      "steps": "Click 'Log out', confirm logout.",
+      "expected_result": "Logged out successfully",
+      "priority": "High",
+      "test_type": "Positive"
+    },
+    {
+      "id": "17",
+      "requirement": "User can register account",
+      "title": "Register with existing email",
+      "preconditions": "Email already exists in database",
+      "steps": "Enter existing email, submit registration form.",
+      "expected_result": "Registration failed due to duplicate email",
+      "priority": "High",
+      "test_type": "Negative"
+    },
+    {
+      "id": "18",
+      "requirement": "User can log in",
+      "title": "Log in with invalid password",
+      "preconditions": "Registered user exists",
+      "steps": "Enter valid email, invalid password, submit login form.",
+      "expected_result": "Login failed due to invalid credentials",
+      "priority": "High",
+      "test_type": "Negative"
+    },
+    {
+      "id": "19",
+      "requirement": "User can browse products",
+      "title": "Browse products with no results",
+      "preconditions": "No products in catalog",
+      "steps": "Navigate to product list, select a product.",
+      "expected_result": "No products found",
+      "priority": "Medium",
+      "test_type": "Negative"
+    },
+    {
+      "id": "20",
+      "requirement": "User can search products",
+      "title": "Search for products with no results",
+      "preconditions": "No products in catalog",
+      "steps": "Enter valid search query, submit search form.",
+      "expected_result": "No results displayed",
+      "priority": "Medium",
+      "test_type": "Negative"
+    },
+    {
+      "id": "21",
+      "requirement": "User can view product details",
+      "title": "View non-existent product",
+      "preconditions": "Product does not exist",
+      "steps": "Navigate to product page, view details.",
+      "expected_result": "Product not found",
+      "priority": "Medium",
+      "test_type": "Negative"
+    },
+    {
+      "id": "22",
+      "requirement": "User can add product to cart",
+      "title": "Add non-existent product to cart",
+      "preconditions": "Product does not exist",
+      "steps": "Select product, click 'Add to Cart'.",
+      "expected_result": "Product not found in catalog",
+      "priority": "Medium",
+      "test_type": "Negative"
+    },
+    {
+      "id": "23",
+      "requirement": "User can update cart quantity",
+      "title": "Update non-existent product quantity",
+      "preconditions": "Product does not exist in cart",
+      "steps": "Select product, adjust quantity, submit.",
+      "expected_result": "Product not found in cart",
+      "priority": "Medium",
+      "test_type": "Negative"
+    },
+    {
+      "id": "24",
+      "requirement": "User can remove product from cart",
+      "title": "Remove non-existent product from cart",
+      "preconditions": "Product does not exist in cart",
+      "steps": "Select product, click 'Remove'.",
+      "expected_result": "Product not found in cart",
+      "priority": "Medium",
+      "test_type": "Negative"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "app": "OpenCart",
+  "context": "E-commerce platform for managing products, cart, checkout, orders, and payments.",
+  "users": [
+    "customer",
+    "administrator"
+  ],
+
+  "main_features": [
+    "catalog",
+    "shopping cart",
+    "checkout",
+    "payment",
+    "orders"
+  ]
+}

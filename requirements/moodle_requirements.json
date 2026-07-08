@@ -1,0 +1,17 @@
+[
+  "User can log in with valid credentials",
+  "System rejects invalid login",
+  "User can browse available courses",
+  "User can search for courses",
+  "Search returns no results for invalid query",
+  "User can enroll in course",
+  "System prevents double enrollment",
+  "User can open enrolled course",
+  "User can view course materials",
+  "User can download course resources",
+  "User can view assignment list",
+  "Access restrictions for non-enrolled users",
+  "Session timeout handling",
+  "Password reset flow",
+  "User can log out successfully"
+]

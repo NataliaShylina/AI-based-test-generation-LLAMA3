@@ -1,0 +1,20 @@
+flowchart TD
+
+User[User] --> Login[Login]
+Login --> Dashboard[Dashboard]
+
+Dashboard --> Courses[Course Catalog]
+Courses --> Search[Search Course]
+Search --> CoursePage[Course Page]
+
+CoursePage --> Enroll[Enroll Course]
+Enroll --> Enrolled[Enrolled Courses]
+Enrolled --> Open[Open Course]
+
+Open --> Materials[Materials]
+Open --> Assignments[Assignments]
+Open --> Resources[Download Resources]
+Open --> Quiz[Quiz Module]
+
+Assignments --> Submit[Submit Assignment]
+Quiz --> Grade[Grade Evaluation]

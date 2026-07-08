@@ -1,0 +1,217 @@
+{
+  "tests": [
+    {
+      "id": "TC1",
+      "requirement": "User can log in to system",
+      "title": "Successful Login",
+      "preconditions": "No previous login attempts",
+      "steps": [
+        "Enter valid username and password",
+        "Click the 'Log In' button"
+      ],
+      "expected_result": "System displays user dashboard",
+      "priority": "High",
+      "test_type": "Positive"
+    },
+    {
+      "id": "TC2",
+      "requirement": "System rejects invalid login",
+      "title": "Failed Login Attempt",
+      "preconditions": "Invalid username and password entered",
+      "steps": [
+        "Enter invalid username and password",
+        "Click the 'Log In' button"
+      ],
+      "expected_result": "System displays error message",
+      "priority": "High",
+      "test_type": "Negative"
+    },
+    {
+      "id": "TC3",
+      "requirement": "User can search patient by name",
+      "title": "Patient Search by Name",
+      "preconditions": "Valid patient name entered",
+      "steps": [
+        "Enter valid patient name",
+        "Click the 'Search' button"
+      ],
+      "expected_result": "System displays patient profile",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "TC4",
+      "requirement": "User can search patient by SSN",
+      "title": "Patient Search by SSN",
+      "preconditions": "Valid patient SSN entered",
+      "steps": [
+        "Enter valid patient SSN",
+        "Click the 'Search' button"
+      ],
+      "expected_result": "System displays patient profile",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "TC5",
+      "requirement": "System returns no result for invalid patient",
+      "title": "Patient Search with No Results",
+      "preconditions": "Invalid patient name or SSN entered",
+      "steps": [
+        "Enter invalid patient name or SSN",
+        "Click the 'Search' button"
+      ],
+      "expected_result": "System displays error message",
+      "priority": "Medium",
+      "test_type": "Negative"
+    },
+    {
+      "id": "TC6",
+      "requirement": "User can open patient profile",
+      "title": "Open Patient Profile",
+      "preconditions": "Valid patient selected",
+      "steps": [
+        "Select valid patient",
+        "Click the 'View Profile' button"
+      ],
+      "expected_result": "System displays patient demographics",
+      "priority": "Low",
+      "test_type": "Positive"
+    },
+    {
+      "id": "TC7",
+      "requirement": "User can view patient visit history",
+      "title": "View Patient Visit History",
+      "preconditions": "Valid patient selected",
+      "steps": [
+        "Select valid patient",
+        "Click the 'View Visit History' button"
+      ],
+      "expected_result": "System displays patient visit history",
+      "priority": "Low",
+      "test_type": "Positive"
+    },
+    {
+      "id": "TC8",
+      "requirement": "User can open encounter record",
+      "title": "Open Encounter Record",
+      "preconditions": "Valid patient selected and valid encounter date entered",
+      "steps": [
+        "Select valid patient",
+        "Enter valid encounter date",
+        "Click the 'View Record' button"
+      ],
+      "expected_result": "System displays encounter record",
+      "priority": "Low",
+      "test_type": "Positive"
+    },
+    {
+      "id": "TC9",
+      "requirement": "User can log out",
+      "title": "Successful Logout",
+      "preconditions": "Valid user logged in",
+      "steps": [
+        "Click the 'Log Out' button"
+      ],
+      "expected_result": "System displays login page",
+      "priority": "High",
+      "test_type": "Positive"
+    },
+    {
+      "id": "TC10",
+      "requirement": "User can view medical history",
+      "title": "View Medical History",
+      "preconditions": "Valid patient selected",
+      "steps": [
+        "Select valid patient",
+        "Click the 'View Medical History' button"
+      ],
+      "expected_result": "System displays patient medical history",
+      "priority": "Low",
+      "test_type": "Positive"
+    },
+    {
+      "id": "TC11",
+      "requirement": "User can view prescriptions",
+      "title": "View Prescriptions",
+      "preconditions": "Valid patient selected",
+      "steps": [
+        "Select valid patient",
+        "Click the 'View Prescriptions' button"
+      ],
+      "expected_result": "System displays patient prescriptions",
+      "priority": "Low",
+      "test_type": "Positive"
+    },
+    {
+      "id": "TC12",
+      "requirement": "Add clinical notes",
+      "title": "Add Clinical Notes",
+      "preconditions": "Valid patient selected and valid encounter date entered",
+      "steps": [
+        "Select valid patient",
+        "Enter valid encounter date",
+        "Click the 'Add Notes' button"
+      ],
+      "expected_result": "System displays added notes",
+      "priority": "Low",
+      "test_type": "Positive"
+    },
+    {
+      "id": "TC13",
+      "requirement": "Prescribe medication",
+      "title": "Prescribe Medication",
+      "preconditions": "Valid patient selected and valid encounter date entered",
+      "steps": [
+        "Select valid patient",
+        "Enter valid encounter date",
+        "Click the 'Prescribe' button"
+      ],
+      "expected_result": "System displays prescribed medication",
+      "priority": "Low",
+      "test_type": "Positive"
+    },
+    {
+      "id": "TC14",
+      "requirement": "Allergy checking",
+      "title": "Check Allergies",
+      "preconditions": "Valid patient selected and valid encounter date entered",
+      "steps": [
+        "Select valid patient",
+        "Enter valid encounter date",
+        "Click the 'Check Allergies' button"
+      ],
+      "expected_result": "System displays allergy information",
+      "priority": "Low",
+      "test_type": "Positive"
+    },
+    {
+      "id": "TC15",
+      "requirement": "Appointment overview",
+      "title": "View Appointment Overview",
+      "preconditions": "Valid patient selected and valid encounter date entered",
+      "steps": [
+        "Select valid patient",
+        "Enter valid encounter date",
+        "Click the 'View Appointments' button"
+      ],
+      "expected_result": "System displays appointment overview",
+      "priority": "Low",
+      "test_type": "Positive"
+    },
+    {
+      "id": "TC16",
+      "requirement": "Access control for patients",
+      "title": "Patient Access Control",
+      "preconditions": "Valid patient selected and valid encounter date entered",
+      "steps": [
+        "Select valid patient",
+        "Enter valid encounter date",
+        "Click the 'View Patient Information' button"
+      ],
+      "expected_result": "System displays patient information",
+      "priority": "Low",
+      "test_type": "Positive"
+    }
+  ]
+}

@@ -1,0 +1,254 @@
+{
+  "tests": [
+    {
+      "id": "1",
+      "requirement": "User can log in with valid credentials",
+      "title": "Valid login test",
+      "preconditions": "No preconditions",
+      "steps": "Log in with valid username and password.",
+      "expected_result": "Login is successful.",
+      "priority": "High",
+      "test_type": "Positive"
+    },
+    {
+      "id": "2",
+      "requirement": "System rejects invalid login",
+      "title": "Invalid login test",
+      "preconditions": "No preconditions",
+      "steps": "Log in with invalid username and password.",
+      "expected_result": "Login is rejected.",
+      "priority": "High",
+      "test_type": "Negative"
+    },
+    {
+      "id": "3",
+      "requirement": "User can browse available courses",
+      "title": "Course browsing test",
+      "preconditions": "No preconditions",
+      "steps": "Browse the course list without searching.",
+      "expected_result": "The course list is displayed.",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "4",
+      "requirement": "User can search for courses",
+      "title": "Course search test",
+      "preconditions": "No preconditions",
+      "steps": "Search for a specific course using the search bar.",
+      "expected_result": "The searched course is displayed in the results.",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "5",
+      "requirement": "Search returns no results for invalid query",
+      "title": "Invalid search test",
+      "preconditions": "No preconditions",
+      "steps": "Search for a non-existent course using the search bar.",
+      "expected_result": "No courses are displayed in the results.",
+      "priority": "Medium",
+      "test_type": "Negative"
+    },
+    {
+      "id": "6",
+      "requirement": "User can enroll in course",
+      "title": "Course enrollment test",
+      "preconditions": "The user is not enrolled in the course.",
+      "steps": "Enroll in a specific course using the enrollment form.",
+      "expected_result": "The user is successfully enrolled in the course.",
+      "priority": "High",
+      "test_type": "Positive"
+    },
+    {
+      "id": "7",
+      "requirement": "System prevents double enrollment",
+      "title": "Double enrollment test",
+      "preconditions": "The user is already enrolled in the course.",
+      "steps": "Attempt to enroll in the same course again using the enrollment form.",
+      "expected_result": "Enrollment is rejected due to duplicate enrollment.",
+      "priority": "High",
+      "test_type": "Negative"
+    },
+    {
+      "id": "8",
+      "requirement": "User can open enrolled course",
+      "title": "Course access test",
+      "preconditions": "The user is enrolled in the course.",
+      "steps": "Open the specific course using the course list or search results.",
+      "expected_result": "The course content is displayed to the user.",
+      "priority": "High",
+      "test_type": "Positive"
+    },
+    {
+      "id": "9",
+      "requirement": "User can view course materials",
+      "title": "Course material test",
+      "preconditions": "The user is enrolled in the course.",
+      "steps": "View the course materials, such as assignments or quizzes.",
+      "expected_result": "The course materials are displayed to the user.",
+      "priority": "High",
+      "test_type": "Positive"
+    },
+    {
+      "id": "10",
+      "requirement": "User can download course resources",
+      "title": "Resource download test",
+      "preconditions": "The user is enrolled in the course and has access to the resource.",
+      "steps": "Download a specific course resource using the download link.",
+      "expected_result": "The resource is successfully downloaded.",
+      "priority": "High",
+      "test_type": "Positive"
+    },
+    {
+      "id": "11",
+      "requirement": "User can view assignment list",
+      "title": "Assignment list test",
+      "preconditions": "The user is enrolled in the course and has access to assignments.",
+      "steps": "View the assignment list for the specific course.",
+      "expected_result": "The assignment list is displayed to the user.",
+      "priority": "High",
+      "test_type": "Positive"
+    },
+    {
+      "id": "12",
+      "requirement": "Access restrictions for non-enrolled users",
+      "title": "Non-enrollment access test",
+      "preconditions": "The user is not enrolled in the course.",
+      "steps": "Attempt to view or download a specific course resource without being enrolled.",
+      "expected_result": "Access is restricted due to lack of enrollment.",
+      "priority": "High",
+      "test_type": "Negative"
+    },
+    {
+      "id": "13",
+      "requirement": "Session timeout handling",
+      "title": "Session timeout test",
+      "preconditions": "The user has an active session.",
+      "steps": "Wait for the session to timeout and then attempt to log in again.",
+      "expected_result": "The system logs the user out due to session timeout.",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "14",
+      "requirement": "Password reset flow",
+      "title": "Password reset test",
+      "preconditions": "The user has forgotten their password.",
+      "steps": "Initiate the password reset process and follow the prompts to reset the password.",
+      "expected_result": "The password is successfully reset.",
+      "priority": "High",
+      "test_type": "Positive"
+    },
+    {
+      "id": "15",
+      "requirement": "User can log out successfully",
+      "title": "Logout test",
+      "preconditions": "The user has an active session.",
+      "steps": "Log out of the system using the logout link or button.",
+      "expected_result": "The system logs the user out and ends their session.",
+      "priority": "High",
+      "test_type": "Positive"
+    },
+    {
+      "id": "16",
+      "requirement": "User can log in with valid credentials",
+      "title": "Valid login test (alternative)",
+      "preconditions": "No preconditions",
+      "steps": "Log in using an alternative valid username and password.",
+      "expected_result": "Login is successful.",
+      "priority": "High",
+      "test_type": "Positive"
+    },
+    {
+      "id": "17",
+      "requirement": "System rejects invalid login",
+      "title": "Invalid login test (alternative)",
+      "preconditions": "No preconditions",
+      "steps": "Log in using an alternative invalid username and password.",
+      "expected_result": "Login is rejected.",
+      "priority": "High",
+      "test_type": "Negative"
+    },
+    {
+      "id": "18",
+      "requirement": "User can browse available courses",
+      "title": "Course browsing test (alternative)",
+      "preconditions": "No preconditions",
+      "steps": "Browse the course list using an alternative method, such as a course catalog.",
+      "expected_result": "The course list is displayed.",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "19",
+      "requirement": "User can search for courses",
+      "title": "Course search test (alternative)",
+      "preconditions": "No preconditions",
+      "steps": "Search for a specific course using an alternative method, such as a course directory.",
+      "expected_result": "The searched course is displayed in the results.",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "20",
+      "requirement": "User can enroll in course",
+      "title": "Course enrollment test (alternative)",
+      "preconditions": "The user is not enrolled in the course.",
+      "steps": "Enroll in a specific course using an alternative method, such as a course registration form.",
+      "expected_result": "The user is successfully enrolled in the course.",
+      "priority": "High",
+      "test_type": "Positive"
+    },
+    {
+      "id": "21",
+      "requirement": "User can open enrolled course",
+      "title": "Course access test (alternative)",
+      "preconditions": "The user is enrolled in the course.",
+      "steps": "Open the specific course using an alternative method, such as a course dashboard.",
+      "expected_result": "The course content is displayed to the user.",
+      "priority": "High",
+      "test_type": "Positive"
+    },
+    {
+      "id": "22",
+      "requirement": "User can view assignment list",
+      "title": "Assignment list test (alternative)",
+      "preconditions": "The user is enrolled in the course and has access to assignments.",
+      "steps": "View the assignment list for the specific course using an alternative method, such as a course planner.",
+      "expected_result": "The assignment list is displayed to the user.",
+      "priority": "High",
+      "test_type": "Positive"
+    },
+    {
+      "id": "23",
+      "requirement": "Access restrictions for non-enrolled users",
+      "title": "Non-enrollment access test (alternative)",
+      "preconditions": "The user is not enrolled in the course.",
+      "steps": "Attempt to view or download a specific course resource without being enrolled using an alternative method, such as a course preview.",
+      "expected_result": "Access is restricted due to lack of enrollment.",
+      "priority": "High",
+      "test_type": "Negative"
+    },
+    {
+      "id": "24",
+      "requirement": "Session timeout handling",
+      "title": "Session timeout test (alternative)",
+      "preconditions": "The user has an active session.",
+      "steps": "Wait for the session to timeout and then attempt to log in again using an alternative method, such as a login link on the course dashboard.",
+      "expected_result": "The system logs the user out due to session timeout.",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "25",
+      "requirement": "User can log out successfully",
+      "title": "Logout test (alternative)",
+      "preconditions": "The user has an active session.",
+      "steps": "Log out of the system using an alternative method, such as a logout button on the course dashboard.",
+      "expected_result": "The system logs the user out and ends their session.",
+      "priority": "High",
+      "test_type": "Positive"
+    }
+  ]
+}

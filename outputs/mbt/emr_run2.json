@@ -1,0 +1,354 @@
+{
+  "tests": [
+    {
+      "id": "1",
+      "requirement": "User can log in to system",
+      "title": "Positive login test",
+      "preconditions": "No preconditions",
+      "steps": [
+        {
+          "step": "Enter valid username and password"
+        }
+      ],
+      "expected_result": "System logs user in successfully",
+      "priority": "High",
+      "test_type": "Positive"
+    },
+    {
+      "id": "2",
+      "requirement": "User can log in to system",
+      "title": "Negative login test - invalid username",
+      "preconditions": "No preconditions",
+      "steps": [
+        {
+          "step": "Enter invalid username and valid password"
+        }
+      ],
+      "expected_result": "System rejects login attempt with error message",
+      "priority": "High",
+      "test_type": "Negative"
+    },
+    {
+      "id": "3",
+      "requirement": "User can log in to system",
+      "title": "Boundary login test - empty password",
+      "preconditions": "No preconditions",
+      "steps": [
+        {
+          "step": "Enter valid username and empty password"
+        }
+      ],
+      "expected_result": "System rejects login attempt with error message",
+      "priority": "High",
+      "test_type": "Boundary"
+    },
+    {
+      "id": "4",
+      "requirement": "User can log in to system",
+      "title": "Workflow login test - multiple attempts",
+      "preconditions": "No preconditions",
+      "steps": [
+        {
+          "step": "Enter valid username and password, then try again with same credentials"
+        }
+      ],
+      "expected_result": "System logs user in successfully after second attempt",
+      "priority": "Medium",
+      "test_type": "Workflow"
+    },
+    {
+      "id": "5",
+      "requirement": "User can search patient by name",
+      "title": "Positive patient search test",
+      "preconditions": "No preconditions",
+      "steps": [
+        {
+          "step": "Enter valid patient name in search field"
+        }
+      ],
+      "expected_result": "System returns list of matching patients",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "6",
+      "requirement": "User can search patient by SSN",
+      "title": "Positive patient search test - SSN",
+      "preconditions": "No preconditions",
+      "steps": [
+        {
+          "step": "Enter valid patient SSN in search field"
+        }
+      ],
+      "expected_result": "System returns list of matching patients",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "7",
+      "requirement": "User can open patient profile",
+      "title": "Positive patient profile test",
+      "preconditions": "No preconditions",
+      "steps": [
+        {
+          "step": "Select a valid patient from search results and view their profile"
+        }
+      ],
+      "expected_result": "System displays patient's demographics, visit history, and medical history",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "8",
+      "requirement": "User can open encounter record",
+      "title": "Positive encounter record test",
+      "preconditions": "No preconditions",
+      "steps": [
+        {
+          "step": "Select a valid patient from search results and view their encounter records"
+        }
+      ],
+      "expected_result": "System displays list of encounter records with details",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "9",
+      "requirement": "User can log out",
+      "title": "Positive logout test",
+      "preconditions": "No preconditions",
+      "steps": [
+        {
+          "step": "Click the logout button"
+        }
+      ],
+      "expected_result": "System logs user out successfully",
+      "priority": "High",
+      "test_type": "Positive"
+    },
+    {
+      "id": "10",
+      "requirement": "User can log out",
+      "title": "Negative logout test - invalid session",
+      "preconditions": "No preconditions",
+      "steps": [
+        {
+          "step": "Try to log out with an invalid session"
+        }
+      ],
+      "expected_result": "System rejects logout attempt with error message",
+      "priority": "High",
+      "test_type": "Negative"
+    },
+    {
+      "id": "11",
+      "requirement": "User can log out",
+      "title": "Boundary logout test - no session",
+      "preconditions": "No preconditions",
+      "steps": [
+        {
+          "step": "Try to log out with no active session"
+        }
+      ],
+      "expected_result": "System displays error message indicating no active session",
+      "priority": "High",
+      "test_type": "Boundary"
+    },
+    {
+      "id": "12",
+      "requirement": "User can log out",
+      "title": "Workflow logout test - multiple attempts",
+      "preconditions": "No preconditions",
+      "steps": [
+        {
+          "step": "Try to log out, then try again with same credentials"
+        }
+      ],
+      "expected_result": "System logs user out successfully after second attempt",
+      "priority": "Medium",
+      "test_type": "Workflow"
+    },
+    {
+      "id": "13",
+      "requirement": "User can view patient demographics",
+      "title": "Positive patient demographics test",
+      "preconditions": "No preconditions",
+      "steps": [
+        {
+          "step": "Select a valid patient from search results and view their demographics"
+        }
+      ],
+      "expected_result": "System displays patient's demographics information",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "14",
+      "requirement": "User can view patient visit history",
+      "title": "Positive patient visit history test",
+      "preconditions": "No preconditions",
+      "steps": [
+        {
+          "step": "Select a valid patient from search results and view their visit history"
+        }
+      ],
+      "expected_result": "System displays list of patient's visits with details",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "15",
+      "requirement": "User can open encounter record",
+      "title": "Positive encounter record test - multiple records",
+      "preconditions": "No preconditions",
+      "steps": [
+        {
+          "step": "Select a valid patient from search results and view their multiple encounter records"
+        }
+      ],
+      "expected_result": "System displays list of encounter records with details",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "16",
+      "requirement": "User can view medical history",
+      "title": "Positive patient medical history test",
+      "preconditions": "No preconditions",
+      "steps": [
+        {
+          "step": "Select a valid patient from search results and view their medical history"
+        }
+      ],
+      "expected_result": "System displays list of patient's medical conditions with details",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "17",
+      "requirement": "User can view prescriptions",
+      "title": "Positive patient prescription test",
+      "preconditions": "No preconditions",
+      "steps": [
+        {
+          "step": "Select a valid patient from search results and view their prescriptions"
+        }
+      ],
+      "expected_result": "System displays list of patient's prescribed medications with details",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "18",
+      "requirement": "User can add clinical notes",
+      "title": "Positive clinical notes test",
+      "preconditions": "No preconditions",
+      "steps": [
+        {
+          "step": "Select a valid patient from search results and add new clinical notes"
+        }
+      ],
+      "expected_result": "System adds new clinical notes to patient's record",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "19",
+      "requirement": "User can prescribe medication",
+      "title": "Positive prescription test",
+      "preconditions": "No preconditions",
+      "steps": [
+        {
+          "step": "Select a valid patient from search results and prescribe new medication"
+        }
+      ],
+      "expected_result": "System adds new prescription to patient's record",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "20",
+      "requirement": "User can check for allergies",
+      "title": "Positive allergy test",
+      "preconditions": "No preconditions",
+      "steps": [
+        {
+          "step": "Select a valid patient from search results and check for allergies"
+        }
+      ],
+      "expected_result": "System displays list of patient's known allergies with details",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "21",
+      "requirement": "User can access appointment overview",
+      "title": "Positive appointment overview test",
+      "preconditions": "No preconditions",
+      "steps": [
+        {
+          "step": "Select a valid patient from search results and view their appointment schedule"
+        }
+      ],
+      "expected_result": "System displays list of patient's upcoming appointments with details",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "22",
+      "requirement": "User can access control for patients",
+      "title": "Positive patient access control test",
+      "preconditions": "No preconditions",
+      "steps": [
+        {
+          "step": "Select a valid patient from search results and view their access controls"
+        }
+      ],
+      "expected_result": "System displays list of patient's access controls with details",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "23",
+      "requirement": "User can log out",
+      "title": "Negative logout test - invalid session (again)",
+      "preconditions": "No preconditions",
+      "steps": [
+        {
+          "step": "Try to log out with an invalid session again"
+        }
+      ],
+      "expected_result": "System rejects logout attempt with error message",
+      "priority": "High",
+      "test_type": "Negative"
+    },
+    {
+      "id": "24",
+      "requirement": "User can log out",
+      "title": "Boundary logout test - no session (again)",
+      "preconditions": "No preconditions",
+      "steps": [
+        {
+          "step": "Try to log out with no active session again"
+        }
+      ],
+      "expected_result": "System displays error message indicating no active session",
+      "priority": "High",
+      "test_type": "Boundary"
+    },
+    {
+      "id": "25",
+      "requirement": "User can log out",
+      "title": "Workflow logout test - multiple attempts (again)",
+      "preconditions": "No preconditions",
+      "steps": [
+        {
+          "step": "Try to log out, then try again with same credentials again"
+        }
+      ],
+      "expected_result": "System logs user out successfully after second attempt",
+      "priority": "Medium",
+      "test_type": "Workflow"
+    }
+  ]
+}

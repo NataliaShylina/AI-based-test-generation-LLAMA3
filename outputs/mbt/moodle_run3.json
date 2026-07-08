@@ -1,0 +1,258 @@
+{
+  "tests": [
+    {
+      "id": "1",
+      "requirement": "User can log in with valid credentials",
+      "title": "Valid login",
+      "preconditions": "No preconditions",
+      "steps": [
+        "Step 1: Enter valid username and password"
+      ],
+      "expected_result": "Login is successful",
+      "priority": "High",
+      "test_type": "Positive"
+    },
+    {
+      "id": "2",
+      "requirement": "System rejects invalid login",
+      "title": "Invalid login",
+      "preconditions": "No preconditions",
+      "steps": [
+        "Step 1: Enter invalid username and password"
+      ],
+      "expected_result": "Login is rejected",
+      "priority": "High",
+      "test_type": "Negative"
+    },
+    {
+      "id": "3",
+      "requirement": "User can browse available courses",
+      "title": "Browse courses",
+      "preconditions": "No preconditions",
+      "steps": [
+        "Step 1: Access course list"
+      ],
+      "expected_result": "Course list is displayed",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "4",
+      "requirement": "User can search for courses",
+      "title": "Search courses",
+      "preconditions": "No preconditions",
+      "steps": [
+        "Step 1: Enter valid search query"
+      ],
+      "expected_result": "Relevant course list is displayed",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "5",
+      "requirement": "Search returns no results for invalid query",
+      "title": "Invalid search query",
+      "preconditions": "No preconditions",
+      "steps": [
+        "Step 1: Enter invalid search query"
+      ],
+      "expected_result": "No course list is displayed",
+      "priority": "Medium",
+      "test_type": "Negative"
+    },
+    {
+      "id": "6",
+      "requirement": "User can enroll in course",
+      "title": "Enroll in course",
+      "preconditions": "Course exists and user is not enrolled",
+      "steps": [
+        "Step 1: Access course details",
+        "Step 2: Enroll in course"
+      ],
+      "expected_result": "Enrollment is successful",
+      "priority": "High",
+      "test_type": "Positive"
+    },
+    {
+      "id": "7",
+      "requirement": "System prevents double enrollment",
+      "title": "Double enrollment",
+      "preconditions": "Course exists and user is already enrolled",
+      "steps": [
+        "Step 1: Access course details",
+        "Step 2: Try to enroll again"
+      ],
+      "expected_result": "Enrollment is rejected",
+      "priority": "High",
+      "test_type": "Negative"
+    },
+    {
+      "id": "8",
+      "requirement": "User can open enrolled course",
+      "title": "Open enrolled course",
+      "preconditions": "Course exists and user is enrolled",
+      "steps": [
+        "Step 1: Access course details"
+      ],
+      "expected_result": "Course materials are displayed",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "9",
+      "requirement": "User can view assignment list",
+      "title": "View assignments",
+      "preconditions": "Course exists and user is enrolled",
+      "steps": [
+        "Step 1: Access course details"
+      ],
+      "expected_result": "Assignment list is displayed",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "10",
+      "requirement": "User can log out successfully",
+      "title": "Log out",
+      "preconditions": "No preconditions",
+      "steps": [
+        "Step 1: Log out"
+      ],
+      "expected_result": "Logout is successful",
+      "priority": "High",
+      "test_type": "Positive"
+    },
+    {
+      "id": "11",
+      "requirement": "User can log in with valid credentials (edge case)",
+      "title": "Edge case login",
+      "preconditions": "No preconditions",
+      "steps": [
+        "Step 1: Enter valid username and password",
+        "Step 2: Log out"
+      ],
+      "expected_result": "Login is successful after logout",
+      "priority": "High",
+      "test_type": "Edge"
+    },
+    {
+      "id": "12",
+      "requirement": "System rejects invalid login (edge case)",
+      "title": "Edge case invalid login",
+      "preconditions": "No preconditions",
+      "steps": [
+        "Step 1: Enter invalid username and password",
+        "Step 2: Log out"
+      ],
+      "expected_result": "Login is rejected after logout",
+      "priority": "High",
+      "test_type": "Edge"
+    },
+    {
+      "id": "13",
+      "requirement": "User can browse available courses (boundary case)",
+      "title": "Boundary case course browsing",
+      "preconditions": "No preconditions",
+      "steps": [
+        "Step 1: Access course list",
+        "Step 2: Browse to edge of course list"
+      ],
+      "expected_result": "Course list is displayed at boundary",
+      "priority": "Medium",
+      "test_type": "Boundary"
+    },
+    {
+      "id": "14",
+      "requirement": "User can search for courses (boundary case)",
+      "title": "Boundary case search",
+      "preconditions": "No preconditions",
+      "steps": [
+        "Step 1: Enter valid search query",
+        "Step 2: Search at edge of course list"
+      ],
+      "expected_result": "Relevant course list is displayed at boundary",
+      "priority": "Medium",
+      "test_type": "Boundary"
+    },
+    {
+      "id": "15",
+      "requirement": "User can enroll in course (boundary case)",
+      "title": "Boundary case enrollment",
+      "preconditions": "Course exists and user is not enrolled",
+      "steps": [
+        "Step 1: Access course details",
+        "Step 2: Enroll at edge of course capacity"
+      ],
+      "expected_result": "Enrollment is successful at boundary",
+      "priority": "High",
+      "test_type": "Boundary"
+    },
+    {
+      "id": "16",
+      "requirement": "User can log out successfully (workflow test)",
+      "title": "Workflow logout",
+      "preconditions": "No preconditions",
+      "steps": [
+        "Step 1: Log in",
+        "Step 2: Access course details",
+        "Step 3: Log out"
+      ],
+      "expected_result": "Logout is successful after login and course access",
+      "priority": "High",
+      "test_type": "Workflow"
+    },
+    {
+      "id": "17",
+      "requirement": "User can log in with valid credentials (workflow test)",
+      "title": "Workflow login",
+      "preconditions": "No preconditions",
+      "steps": [
+        "Step 1: Log out",
+        "Step 2: Log in"
+      ],
+      "expected_result": "Login is successful after logout and re-login",
+      "priority": "High",
+      "test_type": "Workflow"
+    },
+    {
+      "id": "18",
+      "requirement": "User can browse available courses (workflow test)",
+      "title": "Workflow course browsing",
+      "preconditions": "No preconditions",
+      "steps": [
+        "Step 1: Log in",
+        "Step 2: Access course list"
+      ],
+      "expected_result": "Course list is displayed after login",
+      "priority": "Medium",
+      "test_type": "Workflow"
+    },
+    {
+      "id": "19",
+      "requirement": "User can search for courses (workflow test)",
+      "title": "Workflow search",
+      "preconditions": "No preconditions",
+      "steps": [
+        "Step 1: Log in",
+        "Step 2: Enter valid search query"
+      ],
+      "expected_result": "Relevant course list is displayed after login and search",
+      "priority": "Medium",
+      "test_type": "Workflow"
+    },
+    {
+      "id": "20",
+      "requirement": "User can enroll in course (workflow test)",
+      "title": "Workflow enrollment",
+      "preconditions": "Course exists and user is not enrolled",
+      "steps": [
+        "Step 1: Log in",
+        "Step 2: Access course details",
+        "Step 3: Enroll in course"
+      ],
+      "expected_result": "Enrollment is successful after login and course access",
+      "priority": "High",
+      "test_type": "Workflow"
+    }
+  ]
+}

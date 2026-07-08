@@ -1,0 +1,18 @@
+flowchart TD
+
+User[User] --> Catalog[Product Catalog]
+Catalog --> Search[Search Products]
+Search --> Product[Product Page]
+
+Product --> AddCart[Add to Cart]
+AddCart --> Cart[Shopping Cart]
+Cart --> Checkout[Checkout]
+Checkout --> Payment[Payment Gateway]
+Payment --> Confirmation[Order Confirmation]
+
+Product --> Reviews[Reviews]
+Product --> Stock[Stock Availability]
+
+Admin[Admin Panel] --> ManageProducts[Manage Products]
+Admin --> ManageOrders[Manage Orders]
+Admin --> ManageUsers[Manage Users]

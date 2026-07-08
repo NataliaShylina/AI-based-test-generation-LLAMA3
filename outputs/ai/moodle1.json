@@ -1,0 +1,430 @@
+{
+  "tests": [
+    {
+      "id": "Test1",
+      "requirement": "User can log in with valid credentials",
+      "title": "Successful login with valid credentials",
+      "preconditions": "No preconditions",
+      "steps": [
+        {
+          "step": "Enter valid username and password"
+        },
+        {
+          "step": "Click the login button"
+        }
+      ],
+      "expected_result": "System logs user in successfully",
+      "priority": "High",
+      "test_type": "Positive"
+    },
+    {
+      "id": "Test2",
+      "requirement": "User can log in with valid credentials",
+      "title": "Unsuccessful login attempt with invalid credentials",
+      "preconditions": "No preconditions",
+      "steps": [
+        {
+          "step": "Enter invalid username and password"
+        },
+        {
+          "step": "Click the login button"
+        }
+      ],
+      "expected_result": "System rejects login attempt",
+      "priority": "High",
+      "test_type": "Negative"
+    },
+    {
+      "id": "Test3",
+      "requirement": "User can browse available courses",
+      "title": "Successful course browsing",
+      "preconditions": "No preconditions",
+      "steps": [
+        {
+          "step": "Access the course list"
+        },
+        {
+          "step": "Browse through available courses"
+        }
+      ],
+      "expected_result": "System displays available courses",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "Test4",
+      "requirement": "User can search for courses",
+      "title": "Successful course search",
+      "preconditions": "No preconditions",
+      "steps": [
+        {
+          "step": "Enter valid search query"
+        },
+        {
+          "step": "Click the search button"
+        }
+      ],
+      "expected_result": "System returns relevant search results",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "Test5",
+      "requirement": "Search returns no results for invalid query",
+      "title": "Unsuccessful course search with invalid query",
+      "preconditions": "No preconditions",
+      "steps": [
+        {
+          "step": "Enter invalid search query"
+        },
+        {
+          "step": "Click the search button"
+        }
+      ],
+      "expected_result": "System displays no search results",
+      "priority": "Medium",
+      "test_type": "Negative"
+    },
+    {
+      "id": "Test6",
+      "requirement": "User can enroll in course",
+      "title": "Successful course enrollment",
+      "preconditions": "No preconditions",
+      "steps": [
+        {
+          "step": "Access the course list"
+        },
+        {
+          "step": "Enroll in a valid course"
+        }
+      ],
+      "expected_result": "System enrolls user in the course",
+      "priority": "High",
+      "test_type": "Positive"
+    },
+    {
+      "id": "Test7",
+      "requirement": "User can enroll in course",
+      "title": "Unsuccessful course enrollment with invalid course ID",
+      "preconditions": "No preconditions",
+      "steps": [
+        {
+          "step": "Enter invalid course ID"
+        },
+        {
+          "step": "Click the enroll button"
+        }
+      ],
+      "expected_result": "System rejects course enrollment attempt",
+      "priority": "High",
+      "test_type": "Negative"
+    },
+    {
+      "id": "Test8",
+      "requirement": "User can open enrolled course",
+      "title": "Successful course access for enrolled user",
+      "preconditions": "No preconditions",
+      "steps": [
+        {
+          "step": "Access the course list"
+        },
+        {
+          "step": "Open an enrolled course"
+        }
+      ],
+      "expected_result": "System displays course materials for enrolled user",
+      "priority": "High",
+      "test_type": "Positive"
+    },
+    {
+      "id": "Test9",
+      "requirement": "User can view assignment list",
+      "title": "Successful assignment browsing",
+      "preconditions": "No preconditions",
+      "steps": [
+        {
+          "step": "Access the course list"
+        },
+        {
+          "step": "Browse through available assignments"
+        }
+      ],
+      "expected_result": "System displays available assignments",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "Test10",
+      "requirement": "User can log out successfully",
+      "title": "Successful logout",
+      "preconditions": "No preconditions",
+      "steps": [
+        {
+          "step": "Click the logout button"
+        }
+      ],
+      "expected_result": "System logs user out successfully",
+      "priority": "High",
+      "test_type": "Positive"
+    },
+    {
+      "id": "Test11",
+      "requirement": "User can log in with valid credentials",
+      "title": "Successful login attempt after logout",
+      "preconditions": "No preconditions",
+      "steps": [
+        {
+          "step": "Enter valid username and password"
+        },
+        {
+          "step": "Click the login button"
+        }
+      ],
+      "expected_result": "System logs user in successfully after logout",
+      "priority": "High",
+      "test_type": "Positive"
+    },
+    {
+      "id": "Test12",
+      "requirement": "User can log out successfully",
+      "title": "Unsuccessful login attempt after logout",
+      "preconditions": "No preconditions",
+      "steps": [
+        {
+          "step": "Enter invalid username and password"
+        },
+        {
+          "step": "Click the login button"
+        }
+      ],
+      "expected_result": "System rejects login attempt after logout",
+      "priority": "High",
+      "test_type": "Negative"
+    },
+    {
+      "id": "Test13",
+      "requirement": "User can browse available courses",
+      "title": "Successful course browsing with search query",
+      "preconditions": "No preconditions",
+      "steps": [
+        {
+          "step": "Enter valid search query"
+        },
+        {
+          "step": "Click the search button"
+        },
+        {
+          "step": "Browse through available courses"
+        }
+      ],
+      "expected_result": "System displays relevant search results and available courses",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "Test14",
+      "requirement": "User can enroll in course",
+      "title": "Unsuccessful course enrollment with invalid user credentials",
+      "preconditions": "No preconditions",
+      "steps": [
+        {
+          "step": "Enter invalid username and password"
+        },
+        {
+          "step": "Click the enroll button"
+        }
+      ],
+      "expected_result": "System rejects course enrollment attempt due to invalid credentials",
+      "priority": "High",
+      "test_type": "Negative"
+    },
+    {
+      "id": "Test15",
+      "requirement": "User can open enrolled course",
+      "title": "Unsuccessful course access for non-enrolled user",
+      "preconditions": "No preconditions",
+      "steps": [
+        {
+          "step": "Access the course list"
+        },
+        {
+          "step": "Open a course not enrolled in"
+        }
+      ],
+      "expected_result": "System displays access restrictions for non-enrolled users",
+      "priority": "High",
+      "test_type": "Negative"
+    },
+    {
+      "id": "Test16",
+      "requirement": "User can view assignment list",
+      "title": "Unsuccessful assignment browsing with invalid course ID",
+      "preconditions": "No preconditions",
+      "steps": [
+        {
+          "step": "Enter invalid course ID"
+        },
+        {
+          "step": "Browse through available assignments"
+        }
+      ],
+      "expected_result": "System rejects access to assignment list due to invalid course ID",
+      "priority": "Medium",
+      "test_type": "Negative"
+    },
+    {
+      "id": "Test17",
+      "requirement": "User can log out successfully",
+      "title": "Unsuccessful logout attempt with invalid credentials",
+      "preconditions": "No preconditions",
+      "steps": [
+        {
+          "step": "Enter invalid username and password"
+        },
+        {
+          "step": "Click the logout button"
+        }
+      ],
+      "expected_result": "System rejects logout attempt due to invalid credentials",
+      "priority": "High",
+      "test_type": "Negative"
+    },
+    {
+      "id": "Test18",
+      "requirement": "User can log in with valid credentials",
+      "title": "Successful login attempt after session timeout",
+      "preconditions": "No preconditions",
+      "steps": [
+        {
+          "step": "Wait for session timeout"
+        },
+        {
+          "step": "Enter valid username and password"
+        },
+        {
+          "step": "Click the login button"
+        }
+      ],
+      "expected_result": "System logs user in successfully after session timeout",
+      "priority": "High",
+      "test_type": "Positive"
+    },
+    {
+      "id": "Test19",
+      "requirement": "User can log out successfully",
+      "title": "Successful password reset flow",
+      "preconditions": "No preconditions",
+      "steps": [
+        {
+          "step": "Click the forgot password link"
+        },
+        {
+          "step": "Enter valid username and email"
+        },
+        {
+          "step": "Reset password"
+        }
+      ],
+      "expected_result": "System resets user's password successfully",
+      "priority": "High",
+      "test_type": "Positive"
+    },
+    {
+      "id": "Test20",
+      "requirement": "User can log out successfully",
+      "title": "Unsuccessful password reset attempt with invalid credentials",
+      "preconditions": "No preconditions",
+      "steps": [
+        {
+          "step": "Enter invalid username and email"
+        },
+        {
+          "step": "Reset password"
+        }
+      ],
+      "expected_result": "System rejects password reset attempt due to invalid credentials",
+      "priority": "High",
+      "test_type": "Negative"
+    },
+    {
+      "id": "Test21",
+      "requirement": "User can log out successfully",
+      "title": "Successful login attempt with valid credentials after password reset",
+      "preconditions": "No preconditions",
+      "steps": [
+        {
+          "step": "Reset password"
+        },
+        {
+          "step": "Enter valid username and new password"
+        },
+        {
+          "step": "Click the login button"
+        }
+      ],
+      "expected_result": "System logs user in successfully with new credentials after password reset",
+      "priority": "High",
+      "test_type": "Positive"
+    },
+    {
+      "id": "Test22",
+      "requirement": "User can log out successfully",
+      "title": "Unsuccessful login attempt with invalid credentials after password reset",
+      "preconditions": "No preconditions",
+      "steps": [
+        {
+          "step": "Reset password"
+        },
+        {
+          "step": "Enter invalid username and new password"
+        },
+        {
+          "step": "Click the login button"
+        }
+      ],
+      "expected_result": "System rejects login attempt due to invalid credentials after password reset",
+      "priority": "High",
+      "test_type": "Negative"
+    },
+    {
+      "id": "Test23",
+      "requirement": "User can log out successfully",
+      "title": "Successful logout and login with valid credentials",
+      "preconditions": "No preconditions",
+      "steps": [
+        {
+          "step": "Click the logout button"
+        },
+        {
+          "step": "Enter valid username and password"
+        },
+        {
+          "step": "Click the login button"
+        }
+      ],
+      "expected_result": "System logs user in successfully after logout and login",
+      "priority": "High",
+      "test_type": "Positive"
+    },
+    {
+      "id": "Test24",
+      "requirement": "User can log out successfully",
+      "title": "Unsuccessful login attempt with invalid credentials after logout and login",
+      "preconditions": "No preconditions",
+      "steps": [
+        {
+          "step": "Click the logout button"
+        },
+        {
+          "step": "Enter invalid username and password"
+        },
+        {
+          "step": "Click the login button"
+        }
+      ],
+      "expected_result": "System rejects login attempt due to invalid credentials after logout and login",
+      "priority": "High",
+      "test_type": "Negative"
+    }
+  ]
+}

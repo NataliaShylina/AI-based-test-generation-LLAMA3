@@ -1,0 +1,412 @@
+{
+  "tests": [
+    {
+      "id": "Test1",
+      "requirement": "User can register account",
+      "title": "Register Account Test",
+      "preconditions": "No existing account",
+      "steps": [
+        {
+          "step": "Open the registration page"
+        },
+        {
+          "step": "Enter valid email and password"
+        }
+      ],
+      "expected_result": "Account created successfully",
+      "priority": "High",
+      "test_type": "Positive"
+    },
+    {
+      "id": "Test2",
+      "requirement": "User can log in",
+      "title": "Login Test",
+      "preconditions": "Valid account exists",
+      "steps": [
+        {
+          "step": "Open the login page"
+        },
+        {
+          "step": "Enter valid email and password"
+        }
+      ],
+      "expected_result": "Logged in successfully",
+      "priority": "High",
+      "test_type": "Positive"
+    },
+    {
+      "id": "Test3",
+      "requirement": "System rejects invalid login",
+      "title": "Invalid Login Test",
+      "preconditions": "No valid account exists",
+      "steps": [
+        {
+          "step": "Open the login page"
+        },
+        {
+          "step": "Enter invalid email and password"
+        }
+      ],
+      "expected_result": "Login failed due to invalid credentials",
+      "priority": "High",
+      "test_type": "Negative"
+    },
+    {
+      "id": "Test4",
+      "requirement": "User can browse products",
+      "title": "Browse Products Test",
+      "preconditions": "Product catalog exists",
+      "steps": [
+        {
+          "step": "Open the product catalog page"
+        },
+        {
+          "step": "Browse through products"
+        }
+      ],
+      "expected_result": "Products displayed correctly",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "Test5",
+      "requirement": "User can search products",
+      "title": "Search Products Test",
+      "preconditions": "Product catalog exists",
+      "steps": [
+        {
+          "step": "Open the product catalog page"
+        },
+        {
+          "step": "Enter valid search query"
+        }
+      ],
+      "expected_result": "Search results displayed correctly",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "Test6",
+      "requirement": "Search returns empty result for invalid query",
+      "title": "Invalid Search Test",
+      "preconditions": "Product catalog exists",
+      "steps": [
+        {
+          "step": "Open the product catalog page"
+        },
+        {
+          "step": "Enter invalid search query"
+        }
+      ],
+      "expected_result": "No results found",
+      "priority": "Medium",
+      "test_type": "Negative"
+    },
+    {
+      "id": "Test7",
+      "requirement": "User can view product details",
+      "title": "View Product Details Test",
+      "preconditions": "Product exists",
+      "steps": [
+        {
+          "step": "Open the product catalog page"
+        },
+        {
+          "step": "Select a product to view details"
+        }
+      ],
+      "expected_result": "Product details displayed correctly",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "Test8",
+      "requirement": "User can add product to cart",
+      "title": "Add Product to Cart Test",
+      "preconditions": "Product exists and cart is empty",
+      "steps": [
+        {
+          "step": "Open the product catalog page"
+        },
+        {
+          "step": "Select a product to add to cart"
+        }
+      ],
+      "expected_result": "Product added to cart successfully",
+      "priority": "High",
+      "test_type": "Positive"
+    },
+    {
+      "id": "Test9",
+      "requirement": "User can update cart quantity",
+      "title": "Update Cart Quantity Test",
+      "preconditions": "Cart is not empty",
+      "steps": [
+        {
+          "step": "Open the shopping cart page"
+        },
+        {
+          "step": "Update product quantity"
+        }
+      ],
+      "expected_result": "Cart updated successfully",
+      "priority": "High",
+      "test_type": "Positive"
+    },
+    {
+      "id": "Test10",
+      "requirement": "User can remove product from cart",
+      "title": "Remove Product from Cart Test",
+      "preconditions": "Cart is not empty",
+      "steps": [
+        {
+          "step": "Open the shopping cart page"
+        },
+        {
+          "step": "Remove a product from cart"
+        }
+      ],
+      "expected_result": "Product removed from cart successfully",
+      "priority": "High",
+      "test_type": "Positive"
+    },
+    {
+      "id": "Test11",
+      "requirement": "User can proceed to checkout",
+      "title": "Proceed to Checkout Test",
+      "preconditions": "Cart is not empty",
+      "steps": [
+        {
+          "step": "Open the shopping cart page"
+        },
+        {
+          "step": "Proceed to checkout"
+        }
+      ],
+      "expected_result": "Checkout process initiated successfully",
+      "priority": "High",
+      "test_type": "Positive"
+    },
+    {
+      "id": "Test12",
+      "requirement": "Shipping address validation",
+      "title": "Shipping Address Validation Test",
+      "preconditions": "User has a shipping address",
+      "steps": [
+        {
+          "step": "Open the checkout page"
+        },
+        {
+          "step": "Enter valid shipping address"
+        }
+      ],
+      "expected_result": "Shipping address validated successfully",
+      "priority": "High",
+      "test_type": "Positive"
+    },
+    {
+      "id": "Test13",
+      "requirement": "Payment processing",
+      "title": "Payment Processing Test",
+      "preconditions": "User has a payment method",
+      "steps": [
+        {
+          "step": "Open the checkout page"
+        },
+        {
+          "step": "Enter valid payment information"
+        }
+      ],
+      "expected_result": "Payment processed successfully",
+      "priority": "High",
+      "test_type": "Positive"
+    },
+    {
+      "id": "Test14",
+      "requirement": "Order confirmation",
+      "title": "Order Confirmation Test",
+      "preconditions": "User has placed an order",
+      "steps": [
+        {
+          "step": "Open the order history page"
+        },
+        {
+          "step": "View order details"
+        }
+      ],
+      "expected_result": "Order confirmed successfully",
+      "priority": "High",
+      "test_type": "Positive"
+    },
+    {
+      "id": "Test15",
+      "requirement": "Order history view",
+      "title": "Order History View Test",
+      "preconditions": "User has placed an order",
+      "steps": [
+        {
+          "step": "Open the order history page"
+        },
+        {
+          "step": "View order details"
+        }
+      ],
+      "expected_result": "Order history displayed correctly",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "Test16",
+      "requirement": "User can log out",
+      "title": "Log Out Test",
+      "preconditions": "User is logged in",
+      "steps": [
+        {
+          "step": "Open the account page"
+        },
+        {
+          "step": "Click on the log out button"
+        }
+      ],
+      "expected_result": "Logged out successfully",
+      "priority": "High",
+      "test_type": "Positive"
+    },
+    {
+      "id": "Test17",
+      "requirement": "User can view order details",
+      "title": "View Order Details Test",
+      "preconditions": "Order exists",
+      "steps": [
+        {
+          "step": "Open the order history page"
+        },
+        {
+          "step": "Select an order to view details"
+        }
+      ],
+      "expected_result": "Order details displayed correctly",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "Test18",
+      "requirement": "User can cancel order",
+      "title": "Cancel Order Test",
+      "preconditions": "Order exists and is not shipped",
+      "steps": [
+        {
+          "step": "Open the order history page"
+        },
+        {
+          "step": "Select an order to cancel"
+        }
+      ],
+      "expected_result": "Order cancelled successfully",
+      "priority": "High",
+      "test_type": "Positive"
+    },
+    {
+      "id": "Test19",
+      "requirement": "User can view order status",
+      "title": "View Order Status Test",
+      "preconditions": "Order exists and is in progress",
+      "steps": [
+        {
+          "step": "Open the order history page"
+        },
+        {
+          "step": "Select an order to view status"
+        }
+      ],
+      "expected_result": "Order status displayed correctly",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "Test20",
+      "requirement": "User can view product reviews",
+      "title": "View Product Reviews Test",
+      "preconditions": "Product exists and has reviews",
+      "steps": [
+        {
+          "step": "Open the product page"
+        },
+        {
+          "step": "View product reviews"
+        }
+      ],
+      "expected_result": "Reviews displayed correctly",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "Test21",
+      "requirement": "User can add review to product",
+      "title": "Add Review Test",
+      "preconditions": "Product exists and user has a valid account",
+      "steps": [
+        {
+          "step": "Open the product page"
+        },
+        {
+          "step": "Enter a review for the product"
+        }
+      ],
+      "expected_result": "Review added successfully",
+      "priority": "High",
+      "test_type": "Positive"
+    },
+    {
+      "id": "Test22",
+      "requirement": "User can view order history",
+      "title": "View Order History Test",
+      "preconditions": "User has placed an order",
+      "steps": [
+        {
+          "step": "Open the account page"
+        },
+        {
+          "step": "View order history"
+        }
+      ],
+      "expected_result": "Order history displayed correctly",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "Test23",
+      "requirement": "User can view shipping options",
+      "title": "View Shipping Options Test",
+      "preconditions": "Product exists and has shipping options",
+      "steps": [
+        {
+          "step": "Open the product page"
+        },
+        {
+          "step": "View shipping options"
+        }
+      ],
+      "expected_result": "Shipping options displayed correctly",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "Test24",
+      "requirement": "User can view payment methods",
+      "title": "View Payment Methods Test",
+      "preconditions": "Product exists and has payment methods",
+      "steps": [
+        {
+          "step": "Open the product page"
+        },
+        {
+          "step": "View payment methods"
+        }
+      ],
+      "expected_result": "Payment methods displayed correctly",
+      "priority": "Medium",
+      "test_type": "Positive"
+    }
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "tests": [
+    {
+      "id": "test_login_valid_credentials",
+      "requirement": "User can log in with valid credentials",
+      "title": "Valid login with correct username and password",
+      "preconditions": "No previous login attempts",
+      "steps": [
+        "Enter valid username and password",
+        "Click the login button"
+      ],
+      "expected_result": "Successful login and access to dashboard",
+      "priority": "High",
+      "test_type": "Positive"
+    },
+    {
+      "id": "test_login_invalid_credentials",
+      "requirement": "System rejects invalid login",
+      "title": "Invalid login with incorrect username and password",
+      "preconditions": "No previous login attempts",
+      "steps": [
+        "Enter invalid username and password",
+        "Click the login button"
+      ],
+      "expected_result": "Error message indicating invalid credentials",
+      "priority": "High",
+      "test_type": "Negative"
+    },
+    {
+      "id": "test_login_no_credentials",
+      "requirement": "System rejects invalid login",
+      "title": "No login with no username and password",
+      "preconditions": "No previous login attempts",
+      "steps": [
+        "Leave both fields blank",
+        "Click the login button"
+      ],
+      "expected_result": "Error message indicating missing credentials",
+      "priority": "High",
+      "test_type": "Negative"
+    },
+    {
+      "id": "test_login_valid_username_invalid_password",
+      "requirement": "System rejects invalid login",
+      "title": "Valid username with incorrect password",
+      "preconditions": "No previous login attempts",
+      "steps": [
+        "Enter valid username and invalid password",
+        "Click the login button"
+      ],
+      "expected_result": "Error message indicating invalid credentials",
+      "priority": "High",
+      "test_type": "Negative"
+    },
+    {
+      "id": "test_login_invalid_username_valid_password",
+      "requirement": "System rejects invalid login",
+      "title": "Invalid username with valid password",
+      "preconditions": "No previous login attempts",
+      "steps": [
+        "Enter invalid username and valid password",
+        "Click the login button"
+      ],
+      "expected_result": "Error message indicating invalid credentials",
+      "priority": "High",
+      "test_type": "Negative"
+    },
+    {
+      "id": "test_login_valid_username_no_password",
+      "requirement": "System rejects invalid login",
+      "title": "Valid username with no password",
+      "preconditions": "No previous login attempts",
+      "steps": [
+        "Enter valid username and leave password blank",
+        "Click the login button"
+      ],
+      "expected_result": "Error message indicating missing credentials",
+      "priority": "High",
+      "test_type": "Negative"
+    },
+    {
+      "id": "test_login_no_username_valid_password",
+      "requirement": "System rejects invalid login",
+      "title": "No username with valid password",
+      "preconditions": "No previous login attempts",
+      "steps": [
+        "Leave username blank and enter valid password",
+        "Click the login button"
+      ],
+      "expected_result": "Error message indicating missing credentials",
+      "priority": "High",
+      "test_type": "Negative"
+    },
+    {
+      "id": "test_login_valid_username_invalid_course",
+      "requirement": "User can browse available courses",
+      "title": "Valid username with invalid course ID",
+      "preconditions": "No previous login attempts",
+      "steps": [
+        "Enter valid username and invalid course ID",
+        "Click the course link"
+      ],
+      "expected_result": "Error message indicating invalid course",
+      "priority": "Medium",
+      "test_type": "Boundary"
+    },
+    {
+      "id": "test_login_invalid_username_valid_course",
+      "requirement": "User can browse available courses",
+      "title": "Invalid username with valid course ID",
+      "preconditions": "No previous login attempts",
+      "steps": [
+        "Enter invalid username and valid course ID",
+        "Click the course link"
+      ],
+      "expected_result": "Error message indicating invalid credentials",
+      "priority": "Medium",
+      "test_type": "Boundary"
+    }
+  ]
+}

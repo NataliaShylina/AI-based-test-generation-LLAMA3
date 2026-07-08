@@ -1,0 +1,18 @@
+[
+  "User can register account",
+  "User can log in",
+  "System rejects invalid login",
+  "User can browse products",
+  "User can search products",
+  "Search returns empty result for invalid query",
+  "User can view product details",
+  "User can add product to cart",
+  "User can update cart quantity",
+  "User can remove product from cart",
+  "User can proceed to checkout",
+  "Shipping address validation",
+  "Payment processing",
+  "Order confirmation",
+  "Order history view",
+  "User can log out"
+]

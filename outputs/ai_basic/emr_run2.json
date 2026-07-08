@@ -1,0 +1,254 @@
+{
+  "tests": [
+    {
+      "id": "1",
+      "requirement": "User can log in to system",
+      "title": "Login Success",
+      "preconditions": "No previous login attempts",
+      "steps": "Enter valid username and password, click Login button",
+      "expected_result": "System displays user dashboard",
+      "priority": "High",
+      "test_type": "Positive"
+    },
+    {
+      "id": "2",
+      "requirement": "System rejects invalid login",
+      "title": "Invalid Login Attempt",
+      "preconditions": "No previous login attempts",
+      "steps": "Enter invalid username and password, click Login button",
+      "expected_result": "System displays error message",
+      "priority": "High",
+      "test_type": "Negative"
+    },
+    {
+      "id": "3",
+      "requirement": "User can search patient by name",
+      "title": "Patient Search by Name",
+      "preconditions": "No previous searches",
+      "steps": "Enter valid patient name, click Search button",
+      "expected_result": "System displays patient profile",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "4",
+      "requirement": "User can search patient by SSN",
+      "title": "Patient Search by SSN",
+      "preconditions": "No previous searches",
+      "steps": "Enter valid patient SSN, click Search button",
+      "expected_result": "System displays patient profile",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "5",
+      "requirement": "System returns no result for invalid patient",
+      "title": "Patient Not Found",
+      "preconditions": "No previous searches",
+      "steps": "Enter invalid patient name or SSN, click Search button",
+      "expected_result": "System displays error message",
+      "priority": "Medium",
+      "test_type": "Negative"
+    },
+    {
+      "id": "6",
+      "requirement": "User can open patient profile",
+      "title": "Open Patient Profile",
+      "preconditions": "Patient exists in system",
+      "steps": "Click on patient name or SSN, click Open button",
+      "expected_result": "System displays patient demographics and visit history",
+      "priority": "High",
+      "test_type": "Positive"
+    },
+    {
+      "id": "7",
+      "requirement": "User can view patient demographics",
+      "title": "View Patient Demographics",
+      "preconditions": "Patient profile open",
+      "steps": "Click on patient demographics tab",
+      "expected_result": "System displays patient demographic information",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "8",
+      "requirement": "User can view patient visit history",
+      "title": "View Patient Visit History",
+      "preconditions": "Patient profile open",
+      "steps": "Click on patient visit history tab",
+      "expected_result": "System displays patient visit history",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "9",
+      "requirement": "User can open encounter record",
+      "title": "Open Encounter Record",
+      "preconditions": "Patient profile open",
+      "steps": "Click on encounter record tab, click Open button",
+      "expected_result": "System displays encounter details",
+      "priority": "High",
+      "test_type": "Positive"
+    },
+    {
+      "id": "10",
+      "requirement": "User can view medical history",
+      "title": "View Medical History",
+      "preconditions": "Patient profile open",
+      "steps": "Click on patient medical history tab",
+      "expected_result": "System displays patient medical history",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "11",
+      "requirement": "User can view prescriptions",
+      "title": "View Prescriptions",
+      "preconditions": "Patient profile open",
+      "steps": "Click on patient prescriptions tab",
+      "expected_result": "System displays patient prescriptions",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "12",
+      "requirement": "Add clinical notes",
+      "title": "Add Clinical Notes",
+      "preconditions": "Patient profile open",
+      "steps": "Click on Add Notes button, enter note text",
+      "expected_result": "System displays added note",
+      "priority": "High",
+      "test_type": "Positive"
+    },
+    {
+      "id": "13",
+      "requirement": "Prescribe medication",
+      "title": "Prescribe Medication",
+      "preconditions": "Patient profile open",
+      "steps": "Click on Prescribe button, select medication",
+      "expected_result": "System displays prescribed medication",
+      "priority": "High",
+      "test_type": "Positive"
+    },
+    {
+      "id": "14",
+      "requirement": "Allergy checking",
+      "title": "Allergy Checking",
+      "preconditions": "Patient profile open",
+      "steps": "Click on Allergies tab, select allergy",
+      "expected_result": "System displays patient allergies",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "15",
+      "requirement": "Appointment overview",
+      "title": "Appointment Overview",
+      "preconditions": "Patient profile open",
+      "steps": "Click on Appointments tab, select appointment",
+      "expected_result": "System displays appointment details",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "16",
+      "requirement": "Access control for patients",
+      "title": "Patient Access Control",
+      "preconditions": "Patient profile open",
+      "steps": "Click on Patient Settings tab, select access level",
+      "expected_result": "System updates patient access level",
+      "priority": "High",
+      "test_type": "Positive"
+    },
+    {
+      "id": "17",
+      "requirement": "User can log out",
+      "title": "Log Out",
+      "preconditions": "User logged in",
+      "steps": "Click on Log Out button",
+      "expected_result": "System logs user out",
+      "priority": "High",
+      "test_type": "Positive"
+    },
+    {
+      "id": "18",
+      "requirement": "User can log in to system",
+      "title": "Login Success (Edge)",
+      "preconditions": "No previous login attempts",
+      "steps": "Enter valid username and password, click Login button with multiple tabs open",
+      "expected_result": "System displays user dashboard",
+      "priority": "Medium",
+      "test_type": "Boundary"
+    },
+    {
+      "id": "19",
+      "requirement": "User can log in to system",
+      "title": "Login Success (Security)",
+      "preconditions": "No previous login attempts",
+      "steps": "Enter valid username and password, click Login button with browser's incognito mode enabled",
+      "expected_result": "System displays user dashboard",
+      "priority": "High",
+      "test_type": "Security"
+    },
+    {
+      "id": "20",
+      "requirement": "User can log in to system",
+      "title": "Login Success (Error Handling)",
+      "preconditions": "No previous login attempts",
+      "steps": "Enter invalid username and password, click Login button with browser's developer tools open",
+      "expected_result": "System displays error message",
+      "priority": "Medium",
+      "test_type": "Edge"
+    },
+    {
+      "id": "21",
+      "requirement": "User can log in to system",
+      "title": "Login Success (Negative)",
+      "preconditions": "No previous login attempts",
+      "steps": "Enter invalid username and password, click Login button with multiple tabs open",
+      "expected_result": "System displays error message",
+      "priority": "High",
+      "test_type": "Negative"
+    },
+    {
+      "id": "22",
+      "requirement": "User can log in to system",
+      "title": "Login Success (Positive)",
+      "preconditions": "No previous login attempts",
+      "steps": "Enter valid username and password, click Login button with single tab open",
+      "expected_result": "System displays user dashboard",
+      "priority": "High",
+      "test_type": "Positive"
+    },
+    {
+      "id": "23",
+      "requirement": "User can log in to system",
+      "title": "Login Success (Workflow)",
+      "preconditions": "No previous login attempts",
+      "steps": "Enter valid username and password, click Login button with multiple tabs open and then close them",
+      "expected_result": "System displays user dashboard",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "24",
+      "requirement": "User can log in to system",
+      "title": "Login Success (Error Handling)",
+      "preconditions": "No previous login attempts",
+      "steps": "Enter invalid username and password, click Login button with browser's developer tools open",
+      "expected_result": "System displays error message",
+      "priority": "Medium",
+      "test_type": "Edge"
+    },
+    {
+      "id": "25",
+      "requirement": "User can log in to system",
+      "title": "Login Success (Security)",
+      "preconditions": "No previous login attempts",
+      "steps": "Enter valid username and password, click Login button with browser's incognito mode enabled",
+      "expected_result": "System displays user dashboard",
+      "priority": "High",
+      "test_type": "Security"
+    }
+  ]
+}

@@ -1,0 +1,198 @@
+{
+  "tests": [
+    {
+      "id": "1",
+      "requirement": "User can register account",
+      "title": "Register User Positive Test",
+      "preconditions": "No user exists with given username",
+      "steps": [
+        "User enters valid username, email, and password",
+        "User clicks the 'Register' button"
+      ],
+      "expected_result": "User is successfully registered and logged in",
+      "priority": "High",
+      "test_type": "Positive"
+    },
+    {
+      "id": "2",
+      "requirement": "System rejects invalid login",
+      "title": "Invalid Login Negative Test",
+      "preconditions": "User has not registered or logged in",
+      "steps": [
+        "User enters invalid username and password",
+        "User clicks the 'Login' button"
+      ],
+      "expected_result": "System displays an error message indicating invalid credentials",
+      "priority": "High",
+      "test_type": "Negative"
+    },
+    {
+      "id": "3",
+      "requirement": "User can browse products",
+      "title": "Browse Products Positive Test",
+      "preconditions": "No search query is entered",
+      "steps": [
+        "User navigates to the product catalog",
+        "User browses through available products"
+      ],
+      "expected_result": "User sees a list of available products with details and images",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "4",
+      "requirement": "User can search products",
+      "title": "Search Products Positive Test",
+      "preconditions": "No product is selected",
+      "steps": [
+        "User enters valid search query",
+        "User clicks the 'Search' button"
+      ],
+      "expected_result": "System displays a list of matching products with details and images",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "5",
+      "requirement": "Search returns empty result for invalid query",
+      "title": "Invalid Search Negative Test",
+      "preconditions": "No product is selected",
+      "steps": [
+        "User enters invalid search query",
+        "User clicks the 'Search' button"
+      ],
+      "expected_result": "System displays an error message indicating no matching products found",
+      "priority": "Medium",
+      "test_type": "Negative"
+    },
+    {
+      "id": "6",
+      "requirement": "User can view product details",
+      "title": "View Product Details Positive Test",
+      "preconditions": "Product exists in catalog",
+      "steps": [
+        "User selects a product",
+        "User views the product details page"
+      ],
+      "expected_result": "User sees detailed information about the selected product",
+      "priority": "Low",
+      "test_type": "Positive"
+    },
+    {
+      "id": "7",
+      "requirement": "User can add product to cart",
+      "title": "Add Product to Cart Positive Test",
+      "preconditions": "Product exists in catalog and user has a valid account",
+      "steps": [
+        "User selects a product",
+        "User clicks the 'Add to Cart' button"
+      ],
+      "expected_result": "Product is successfully added to the user's cart",
+      "priority": "Low",
+      "test_type": "Positive"
+    },
+    {
+      "id": "8",
+      "requirement": "User can update cart quantity",
+      "title": "Update Cart Quantity Positive Test",
+      "preconditions": "User has products in their cart",
+      "steps": [
+        "User views their cart",
+        "User updates the product quantity"
+      ],
+      "expected_result": "Cart quantity is updated successfully",
+      "priority": "Low",
+      "test_type": "Positive"
+    },
+    {
+      "id": "9",
+      "requirement": "User can remove product from cart",
+      "title": "Remove Product from Cart Positive Test",
+      "preconditions": "User has products in their cart",
+      "steps": [
+        "User views their cart",
+        "User removes a product"
+      ],
+      "expected_result": "Product is successfully removed from the user's cart",
+      "priority": "Low",
+      "test_type": "Positive"
+    },
+    {
+      "id": "10",
+      "requirement": "User can proceed to checkout",
+      "title": "Proceed to Checkout Positive Test",
+      "preconditions": "User has products in their cart and a valid account",
+      "steps": [
+        "User views their cart",
+        "User clicks the 'Checkout' button"
+      ],
+      "expected_result": "System redirects user to the checkout process",
+      "priority": "Low",
+      "test_type": "Positive"
+    },
+    {
+      "id": "11",
+      "requirement": "Shipping address validation",
+      "title": "Shipping Address Validation Positive Test",
+      "preconditions": "User has products in their cart and a valid account",
+      "steps": [
+        "User enters valid shipping address",
+        "User clicks the 'Next' button"
+      ],
+      "expected_result": "System validates the shipping address successfully",
+      "priority": "High",
+      "test_type": "Positive"
+    },
+    {
+      "id": "12",
+      "requirement": "Payment processing",
+      "title": "Payment Processing Positive Test",
+      "preconditions": "User has products in their cart and a valid account",
+      "steps": [
+        "User enters valid payment information",
+        "User clicks the 'Pay' button"
+      ],
+      "expected_result": "System processes the payment successfully",
+      "priority": "High",
+      "test_type": "Positive"
+    },
+    {
+      "id": "13",
+      "requirement": "Order confirmation",
+      "title": "Order Confirmation Positive Test",
+      "preconditions": "User has products in their cart and a valid account",
+      "steps": [
+        "User places an order",
+        "System displays the order confirmation page"
+      ],
+      "expected_result": "System confirms the order successfully",
+      "priority": "High",
+      "test_type": "Positive"
+    },
+    {
+      "id": "14",
+      "requirement": "Order history view",
+      "title": "Order History View Positive Test",
+      "preconditions": "User has placed orders in the past",
+      "steps": [
+        "User views their order history",
+        "System displays a list of previous orders"
+      ],
+      "expected_result": "System displays a list of previous orders successfully",
+      "priority": "Low",
+      "test_type": "Positive"
+    },
+    {
+      "id": "15",
+      "requirement": "User can log out",
+      "title": "Log Out Positive Test",
+      "preconditions": "User is logged in",
+      "steps": [
+        "User clicks the 'Log Out' button"
+      ],
+      "expected_result": "System logs user out successfully",
+      "priority": "Low",
+      "test_type": "Positive"
+    }
+  ]
+}

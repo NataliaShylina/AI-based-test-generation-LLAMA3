@@ -1,0 +1,254 @@
+{
+  "tests": [
+    {
+      "id": "1",
+      "requirement": "User can log in with valid credentials",
+      "title": "Valid login test",
+      "preconditions": "No preconditions",
+      "steps": "Log in with valid username and password.",
+      "expected_result": "Login is successful.",
+      "priority": "High",
+      "test_type": "Positive"
+    },
+    {
+      "id": "2",
+      "requirement": "System rejects invalid login",
+      "title": "Invalid login test",
+      "preconditions": "No preconditions",
+      "steps": "Log in with invalid username and password.",
+      "expected_result": "Login is rejected.",
+      "priority": "High",
+      "test_type": "Negative"
+    },
+    {
+      "id": "3",
+      "requirement": "User can browse available courses",
+      "title": "Course browsing test",
+      "preconditions": "No preconditions",
+      "steps": "Browse the course list.",
+      "expected_result": "Available courses are displayed.",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "4",
+      "requirement": "User can search for courses",
+      "title": "Course search test",
+      "preconditions": "No preconditions",
+      "steps": "Search for a course using valid query.",
+      "expected_result": "Relevant courses are displayed.",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "5",
+      "requirement": "Search returns no results for invalid query",
+      "title": "Invalid search test",
+      "preconditions": "No preconditions",
+      "steps": "Search for a course using invalid query.",
+      "expected_result": "No courses are displayed.",
+      "priority": "Medium",
+      "test_type": "Negative"
+    },
+    {
+      "id": "6",
+      "requirement": "User can enroll in course",
+      "title": "Course enrollment test",
+      "preconditions": "No preconditions",
+      "steps": "Enroll in a valid course.",
+      "expected_result": "Enrollment is successful.",
+      "priority": "High",
+      "test_type": "Positive"
+    },
+    {
+      "id": "7",
+      "requirement": "System prevents double enrollment",
+      "title": "Double enrollment test",
+      "preconditions": "User has already enrolled in the course",
+      "steps": "Try to enroll in the same course again.",
+      "expected_result": "Enrollment is rejected.",
+      "priority": "High",
+      "test_type": "Negative"
+    },
+    {
+      "id": "8",
+      "requirement": "User can open enrolled course",
+      "title": "Course access test",
+      "preconditions": "User has enrolled in the course",
+      "steps": "Open the enrolled course.",
+      "expected_result": "Course materials are displayed.",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "9",
+      "requirement": "User can view assignment list",
+      "title": "Assignment list test",
+      "preconditions": "No preconditions",
+      "steps": "View the assignment list for a course.",
+      "expected_result": "Assignments are displayed.",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "10",
+      "requirement": "Access restrictions for non-enrolled users",
+      "title": "Non-enrollment access test",
+      "preconditions": "User has not enrolled in the course",
+      "steps": "Try to open an enrolled course.",
+      "expected_result": "Access is restricted.",
+      "priority": "High",
+      "test_type": "Negative"
+    },
+    {
+      "id": "11",
+      "requirement": "Session timeout handling",
+      "title": "Session timeout test",
+      "preconditions": "No preconditions",
+      "steps": "Wait for the session to timeout and then log in again.",
+      "expected_result": "Login is successful after session timeout.",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "12",
+      "requirement": "Password reset flow",
+      "title": "Password reset test",
+      "preconditions": "No preconditions",
+      "steps": "Start the password reset process.",
+      "expected_result": "Password is successfully reset.",
+      "priority": "High",
+      "test_type": "Positive"
+    },
+    {
+      "id": "13",
+      "requirement": "User can log out successfully",
+      "title": "Logout test",
+      "preconditions": "No preconditions",
+      "steps": "Log out of the system.",
+      "expected_result": "Logout is successful.",
+      "priority": "High",
+      "test_type": "Positive"
+    },
+    {
+      "id": "14",
+      "requirement": "User can browse available courses",
+      "title": "Course browsing test (alternative)",
+      "preconditions": "No preconditions",
+      "steps": "Browse the course list using alternative method.",
+      "expected_result": "Available courses are displayed.",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "15",
+      "requirement": "User can search for courses",
+      "title": "Course search test (alternative)",
+      "preconditions": "No preconditions",
+      "steps": "Search for a course using alternative query.",
+      "expected_result": "Relevant courses are displayed.",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "16",
+      "requirement": "User can enroll in course",
+      "title": "Course enrollment test (alternative)",
+      "preconditions": "No preconditions",
+      "steps": "Enroll in a valid course using alternative method.",
+      "expected_result": "Enrollment is successful.",
+      "priority": "High",
+      "test_type": "Positive"
+    },
+    {
+      "id": "17",
+      "requirement": "User can view assignment list",
+      "title": "Assignment list test (alternative)",
+      "preconditions": "No preconditions",
+      "steps": "View the assignment list for a course using alternative method.",
+      "expected_result": "Assignments are displayed.",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "18",
+      "requirement": "User can log in with valid credentials",
+      "title": "Valid login test (alternative)",
+      "preconditions": "No preconditions",
+      "steps": "Log in with valid username and password using alternative method.",
+      "expected_result": "Login is successful.",
+      "priority": "High",
+      "test_type": "Positive"
+    },
+    {
+      "id": "19",
+      "requirement": "System rejects invalid login",
+      "title": "Invalid login test (alternative)",
+      "preconditions": "No preconditions",
+      "steps": "Log in with invalid username and password using alternative method.",
+      "expected_result": "Login is rejected.",
+      "priority": "High",
+      "test_type": "Negative"
+    },
+    {
+      "id": "20",
+      "requirement": "User can log out successfully",
+      "title": "Logout test (alternative)",
+      "preconditions": "No preconditions",
+      "steps": "Log out of the system using alternative method.",
+      "expected_result": "Logout is successful.",
+      "priority": "High",
+      "test_type": "Positive"
+    },
+    {
+      "id": "21",
+      "requirement": "User can view course materials",
+      "title": "Course material test",
+      "preconditions": "No preconditions",
+      "steps": "View the course materials for a course.",
+      "expected_result": "Course materials are displayed.",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "22",
+      "requirement": "User can download course resources",
+      "title": "Resource download test",
+      "preconditions": "No preconditions",
+      "steps": "Download a course resource.",
+      "expected_result": "Resource is successfully downloaded.",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "23",
+      "requirement": "User can view assignment list",
+      "title": "Assignment list test (alternative 2)",
+      "preconditions": "No preconditions",
+      "steps": "View the assignment list for a course using alternative method 2.",
+      "expected_result": "Assignments are displayed.",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "24",
+      "requirement": "User can log in with valid credentials",
+      "title": "Valid login test (alternative 2)",
+      "preconditions": "No preconditions",
+      "steps": "Log in with valid username and password using alternative method 2.",
+      "expected_result": "Login is successful.",
+      "priority": "High",
+      "test_type": "Positive"
+    },
+    {
+      "id": "25",
+      "requirement": "User can log out successfully",
+      "title": "Logout test (alternative 2)",
+      "preconditions": "No preconditions",
+      "steps": "Log out of the system using alternative method 2.",
+      "expected_result": "Logout is successful.",
+      "priority": "High",
+      "test_type": "Positive"
+    }
+  ]
+}

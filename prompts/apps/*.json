@@ -1,0 +1,11 @@
+{
+  "app": "moodle",
+  "type": "LMS",
+  "domain": "education",
+  "key_features": [
+    "course management",
+    "assignments",
+    "grading",
+    "quizzes"
+  ]
+}

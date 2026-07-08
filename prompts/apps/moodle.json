@@ -1,0 +1,21 @@
+{
+  "app": "moodle",
+
+  "description": "Learning Management System",
+
+  "users": [
+    "student",
+    "teacher",
+    "administrator"
+  ],
+
+  "main_features": [
+    "authentication",
+    "course enrollment",
+    "course browsing",
+    "assignments",
+    "quizzes",
+    "grades",
+    "resources"
+  ]
+}

@@ -1,0 +1,234 @@
+{
+  "tests": [
+    {
+      "id": "tc1",
+      "requirement": "User can register account",
+      "title": "Register with valid credentials",
+      "preconditions": "No existing account",
+      "steps": "Enter valid email and password, submit registration form",
+      "expected_result": "Account created successfully",
+      "priority": "High",
+      "test_type": "Positive"
+    },
+    {
+      "id": "tc2",
+      "requirement": "User can log in",
+      "title": "Log in with valid credentials",
+      "preconditions": "Registered account exists",
+      "steps": "Enter valid email and password, submit login form",
+      "expected_result": "Logged in successfully",
+      "priority": "High",
+      "test_type": "Positive"
+    },
+    {
+      "id": "tc3",
+      "requirement": "System rejects invalid login",
+      "title": "Log in with invalid credentials",
+      "preconditions": "Registered account exists",
+      "steps": "Enter invalid email and password, submit login form",
+      "expected_result": "Login failed due to incorrect credentials",
+      "priority": "High",
+      "test_type": "Negative"
+    },
+    {
+      "id": "tc4",
+      "requirement": "User can browse products",
+      "title": "Browse products without search query",
+      "preconditions": "No existing search query",
+      "steps": "Navigate to product catalog, view available products",
+      "expected_result": "Product list displayed successfully",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "tc5",
+      "requirement": "User can search products",
+      "title": "Search for a specific product",
+      "preconditions": "No existing search query",
+      "steps": "Enter valid search query, submit search form",
+      "expected_result": "Relevant products displayed in search results",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "tc6",
+      "requirement": "Search returns empty result for invalid query",
+      "title": "Search with invalid query",
+      "preconditions": "No existing search query",
+      "steps": "Enter invalid search query, submit search form",
+      "expected_result": "No products displayed in search results",
+      "priority": "Medium",
+      "test_type": "Negative"
+    },
+    {
+      "id": "tc7",
+      "requirement": "User can view product details",
+      "title": "View product details",
+      "preconditions": "Product exists in catalog",
+      "steps": "Navigate to product page, view product details",
+      "expected_result": "Product details displayed successfully",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "tc8",
+      "requirement": "User can add product to cart",
+      "title": "Add product to cart",
+      "preconditions": "Product exists in catalog, no existing products in cart",
+      "steps": "Navigate to product page, add product to cart",
+      "expected_result": "Product added successfully to cart",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "tc9",
+      "requirement": "User can update cart quantity",
+      "title": "Update cart quantity",
+      "preconditions": "Products exist in cart, no existing cart quantity updates",
+      "steps": "Navigate to cart page, update cart quantity",
+      "expected_result": "Cart quantity updated successfully",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "tc10",
+      "requirement": "User can remove product from cart",
+      "title": "Remove product from cart",
+      "preconditions": "Products exist in cart, no existing cart removals",
+      "steps": "Navigate to cart page, remove product from cart",
+      "expected_result": "Product removed successfully from cart",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "tc11",
+      "requirement": "User can proceed to checkout",
+      "title": "Proceed to checkout",
+      "preconditions": "Products exist in cart, no existing checkout attempts",
+      "steps": "Navigate to cart page, proceed to checkout",
+      "expected_result": "Checkout process initiated successfully",
+      "priority": "High",
+      "test_type": "Positive"
+    },
+    {
+      "id": "tc12",
+      "requirement": "Shipping address validation",
+      "title": "Enter valid shipping address",
+      "preconditions": "No existing shipping address",
+      "steps": "Enter valid shipping address, submit checkout form",
+      "expected_result": "Shipping address validated successfully",
+      "priority": "High",
+      "test_type": "Positive"
+    },
+    {
+      "id": "tc13",
+      "requirement": "Payment processing",
+      "title": "Process payment",
+      "preconditions": "Order exists, no existing payment processing",
+      "steps": "Enter valid payment information, submit payment form",
+      "expected_result": "Payment processed successfully",
+      "priority": "High",
+      "test_type": "Positive"
+    },
+    {
+      "id": "tc14",
+      "requirement": "Order confirmation",
+      "title": "Confirm order",
+      "preconditions": "Order exists, no existing order confirmations",
+      "steps": "Review and confirm order details",
+      "expected_result": "Order confirmed successfully",
+      "priority": "High",
+      "test_type": "Positive"
+    },
+    {
+      "id": "tc15",
+      "requirement": "Order history view",
+      "title": "View order history",
+      "preconditions": "Orders exist, no existing order history views",
+      "steps": "Navigate to order history page, view orders",
+      "expected_result": "Order history displayed successfully",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "tc16",
+      "requirement": "User can log out",
+      "title": "Log out",
+      "preconditions": "User logged in, no existing logout attempts",
+      "steps": "Navigate to account page, log out",
+      "expected_result": "Logged out successfully",
+      "priority": "High",
+      "test_type": "Positive"
+    },
+    {
+      "id": "tc17",
+      "requirement": "User can register account",
+      "title": "Register with invalid credentials",
+      "preconditions": "No existing account",
+      "steps": "Enter invalid email and password, submit registration form",
+      "expected_result": "Account creation failed due to incorrect credentials",
+      "priority": "High",
+      "test_type": "Negative"
+    },
+    {
+      "id": "tc18",
+      "requirement": "User can log in",
+      "title": "Log in with invalid credentials",
+      "preconditions": "Registered account exists, no existing login attempts",
+      "steps": "Enter invalid email and password, submit login form",
+      "expected_result": "Login failed due to incorrect credentials",
+      "priority": "High",
+      "test_type": "Negative"
+    },
+    {
+      "id": "tc19",
+      "requirement": "User can browse products",
+      "title": "Browse products with search query",
+      "preconditions": "Existing search query",
+      "steps": "Navigate to product catalog, view available products",
+      "expected_result": "Product list displayed successfully, filtered by search query",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "tc20",
+      "requirement": "User can search products",
+      "title": "Search for a specific product with invalid query",
+      "preconditions": "No existing search query",
+      "steps": "Enter invalid search query, submit search form",
+      "expected_result": "No products displayed in search results",
+      "priority": "Medium",
+      "test_type": "Negative"
+    },
+    {
+      "id": "tc21",
+      "requirement": "User can view product details",
+      "title": "View product details with non-existent product",
+      "preconditions": "Product does not exist in catalog",
+      "steps": "Navigate to product page, view product details",
+      "expected_result": "Error message displayed due to non-existent product",
+      "priority": "Medium",
+      "test_type": "Negative"
+    },
+    {
+      "id": "tc22",
+      "requirement": "User can add product to cart",
+      "title": "Add product to cart with non-existent product",
+      "preconditions": "Product does not exist in catalog, no existing products in cart",
+      "steps": "Navigate to product page, add product to cart",
+      "expected_result": "Error message displayed due to non-existent product",
+      "priority": "Medium",
+      "test_type": "Negative"
+    },
+    {
+      "id": "tc23",
+      "requirement": "User can update cart quantity",
+      "title": "Update cart quantity with invalid value",
+      "preconditions": "Products exist in cart, no existing cart quantity updates",
+      "steps": "Navigate to cart page, update cart quantity",
+      "expected_result": "Error message displayed due to invalid cart quantity value",
+      "priority": "Medium",
+      "test_type": "Negative"
+    }
+  ]
+}

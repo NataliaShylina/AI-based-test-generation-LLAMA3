@@ -1,0 +1,254 @@
+{
+  "tests": [
+    {
+      "id": "1",
+      "requirement": "User can register account",
+      "title": "Register new user",
+      "preconditions": "No existing account",
+      "steps": "Enter valid email and password, submit registration form",
+      "expected_result": "Account created successfully",
+      "priority": "High",
+      "test_type": "Positive"
+    },
+    {
+      "id": "2",
+      "requirement": "User can log in",
+      "title": "Log in with existing user",
+      "preconditions": "Existing account",
+      "steps": "Enter valid email and password, submit login form",
+      "expected_result": "Logged in successfully",
+      "priority": "High",
+      "test_type": "Positive"
+    },
+    {
+      "id": "3",
+      "requirement": "System rejects invalid login",
+      "title": "Invalid login attempt",
+      "preconditions": "No existing account",
+      "steps": "Enter invalid email and password, submit login form",
+      "expected_result": "Login failed due to incorrect credentials",
+      "priority": "High",
+      "test_type": "Negative"
+    },
+    {
+      "id": "4",
+      "requirement": "User can browse products",
+      "title": "Browse products",
+      "preconditions": "No existing account",
+      "steps": "Navigate to product catalog, select a product",
+      "expected_result": "Product details displayed",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "5",
+      "requirement": "User can search products",
+      "title": "Search for products",
+      "preconditions": "No existing account",
+      "steps": "Enter valid search query, submit search form",
+      "expected_result": "Relevant product results displayed",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "6",
+      "requirement": "Search returns empty result for invalid query",
+      "title": "Invalid search query",
+      "preconditions": "No existing account",
+      "steps": "Enter invalid search query, submit search form",
+      "expected_result": "No results found",
+      "priority": "Medium",
+      "test_type": "Negative"
+    },
+    {
+      "id": "7",
+      "requirement": "User can view product details",
+      "title": "View product details",
+      "preconditions": "Existing account",
+      "steps": "Navigate to product catalog, select a product",
+      "expected_result": "Product details displayed",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "8",
+      "requirement": "User can add product to cart",
+      "title": "Add product to cart",
+      "preconditions": "Existing account",
+      "steps": "Navigate to product catalog, select a product, add to cart",
+      "expected_result": "Product added to cart successfully",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "9",
+      "requirement": "User can update cart quantity",
+      "title": "Update cart quantity",
+      "preconditions": "Existing account, products in cart",
+      "steps": "Navigate to cart, update product quantity",
+      "expected_result": "Cart updated successfully",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "10",
+      "requirement": "User can remove product from cart",
+      "title": "Remove product from cart",
+      "preconditions": "Existing account, products in cart",
+      "steps": "Navigate to cart, remove a product",
+      "expected_result": "Product removed from cart successfully",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "11",
+      "requirement": "User can proceed to checkout",
+      "title": "Proceed to checkout",
+      "preconditions": "Existing account, products in cart",
+      "steps": "Navigate to cart, proceed to checkout",
+      "expected_result": "Checkout process initiated",
+      "priority": "High",
+      "test_type": "Positive"
+    },
+    {
+      "id": "12",
+      "requirement": "Shipping address validation",
+      "title": "Invalid shipping address",
+      "preconditions": "Existing account, products in cart",
+      "steps": "Enter invalid shipping address, proceed to checkout",
+      "expected_result": "Checkout failed due to invalid shipping address",
+      "priority": "High",
+      "test_type": "Negative"
+    },
+    {
+      "id": "13",
+      "requirement": "Payment processing",
+      "title": "Successful payment",
+      "preconditions": "Existing account, products in cart",
+      "steps": "Enter valid payment details, proceed to checkout",
+      "expected_result": "Order placed successfully",
+      "priority": "High",
+      "test_type": "Positive"
+    },
+    {
+      "id": "14",
+      "requirement": "Order confirmation",
+      "title": "Order confirmation",
+      "preconditions": "Existing account, products in cart",
+      "steps": "Place an order, view order confirmation page",
+      "expected_result": "Order confirmed successfully",
+      "priority": "High",
+      "test_type": "Positive"
+    },
+    {
+      "id": "15",
+      "requirement": "Order history view",
+      "title": "View order history",
+      "preconditions": "Existing account",
+      "steps": "Navigate to order history, select an order",
+      "expected_result": "Order details displayed",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "16",
+      "requirement": "User can log out",
+      "title": "Log out",
+      "preconditions": "Existing account",
+      "steps": "Navigate to account page, click log out",
+      "expected_result": "Logged out successfully",
+      "priority": "High",
+      "test_type": "Positive"
+    },
+    {
+      "id": "17",
+      "requirement": "User can register account",
+      "title": "Register new user (edge case)",
+      "preconditions": "No existing account",
+      "steps": "Enter valid email and password, submit registration form with invalid data",
+      "expected_result": "Registration failed due to invalid data",
+      "priority": "Low",
+      "test_type": "Edge"
+    },
+    {
+      "id": "18",
+      "requirement": "User can log in",
+      "title": "Log in with existing user (edge case)",
+      "preconditions": "Existing account",
+      "steps": "Enter valid email and password, submit login form with invalid data",
+      "expected_result": "Login failed due to incorrect credentials",
+      "priority": "Low",
+      "test_type": "Edge"
+    },
+    {
+      "id": "19",
+      "requirement": "User can browse products",
+      "title": "Browse products (edge case)",
+      "preconditions": "No existing account",
+      "steps": "Navigate to product catalog, select a product with invalid details",
+      "expected_result": "Product details not displayed due to invalid data",
+      "priority": "Low",
+      "test_type": "Edge"
+    },
+    {
+      "id": "20",
+      "requirement": "User can search products",
+      "title": "Search for products (edge case)",
+      "preconditions": "No existing account",
+      "steps": "Enter invalid search query, submit search form",
+      "expected_result": "No results found due to invalid query",
+      "priority": "Low",
+      "test_type": "Edge"
+    },
+    {
+      "id": "21",
+      "requirement": "User can view product details",
+      "title": "View product details (edge case)",
+      "preconditions": "Existing account, products in cart",
+      "steps": "Navigate to product catalog, select a product with invalid details",
+      "expected_result": "Product details not displayed due to invalid data",
+      "priority": "Low",
+      "test_type": "Edge"
+    },
+    {
+      "id": "22",
+      "requirement": "User can add product to cart",
+      "title": "Add product to cart (edge case)",
+      "preconditions": "Existing account, products in cart",
+      "steps": "Navigate to product catalog, select a product with invalid details, add to cart",
+      "expected_result": "Product not added to cart due to invalid data",
+      "priority": "Low",
+      "test_type": "Edge"
+    },
+    {
+      "id": "23",
+      "requirement": "User can update cart quantity",
+      "title": "Update cart quantity (edge case)",
+      "preconditions": "Existing account, products in cart",
+      "steps": "Navigate to cart, update product quantity with invalid data",
+      "expected_result": "Cart not updated due to invalid data",
+      "priority": "Low",
+      "test_type": "Edge"
+    },
+    {
+      "id": "24",
+      "requirement": "User can remove product from cart",
+      "title": "Remove product from cart (edge case)",
+      "preconditions": "Existing account, products in cart",
+      "steps": "Navigate to cart, remove a product with invalid details",
+      "expected_result": "Product not removed from cart due to invalid data",
+      "priority": "Low",
+      "test_type": "Edge"
+    },
+    {
+      "id": "25",
+      "requirement": "User can proceed to checkout",
+      "title": "Proceed to checkout (edge case)",
+      "preconditions": "Existing account, products in cart",
+      "steps": "Navigate to cart, proceed to checkout with invalid data",
+      "expected_result": "Checkout failed due to invalid data",
+      "priority": "Low",
+      "test_type": "Edge"
+    }
+  ]
+}

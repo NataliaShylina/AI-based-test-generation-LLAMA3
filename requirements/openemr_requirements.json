@@ -1,0 +1,19 @@
+[
+  "User can log in to system",
+  "System rejects invalid login",
+  "User can search patient by name",
+  "User can search patient by SSN",
+  "System returns no result for invalid patient",
+  "User can open patient profile",
+  "User can view patient demographics",
+  "User can view patient visit history",
+  "User can open encounter record",
+  "User can view medical history",
+  "User can view prescriptions",
+  "Add clinical notes",
+  "Prescribe medication",
+  "Allergy checking",
+  "Appointment overview",
+  "Access control for patients",
+  "User can log out"
+]

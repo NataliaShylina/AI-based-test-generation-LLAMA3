@@ -1,0 +1,245 @@
+{
+  "tests": [
+    {
+      "id": "1",
+      "requirement": "User can log in to system",
+      "title": "Positive Login Test",
+      "preconditions": "No preconditions",
+      "steps": [
+        "Step 1: Enter valid username and password"
+      ],
+      "expected_result": "System logs in successfully",
+      "priority": "High",
+      "test_type": "Positive"
+    },
+    {
+      "id": "2",
+      "requirement": "User can log in to system",
+      "title": "Negative Login Test - Invalid Credentials",
+      "preconditions": "No preconditions",
+      "steps": [
+        "Step 1: Enter invalid username and password"
+      ],
+      "expected_result": "System rejects login attempt",
+      "priority": "High",
+      "test_type": "Negative"
+    },
+    {
+      "id": "3",
+      "requirement": "User can log in to system",
+      "title": "Boundary Login Test - Empty Credentials",
+      "preconditions": "No preconditions",
+      "steps": [
+        "Step 1: Enter empty username and password"
+      ],
+      "expected_result": "System rejects login attempt",
+      "priority": "High",
+      "test_type": "Boundary"
+    },
+    {
+      "id": "4",
+      "requirement": "User can log in to system",
+      "title": "Workflow Login Test - Successful Login Then Logout",
+      "preconditions": "No preconditions",
+      "steps": [
+        "Step 1: Log in successfully",
+        "Step 2: Log out"
+      ],
+      "expected_result": "System logs out successfully",
+      "priority": "High",
+      "test_type": "Workflow"
+    },
+    {
+      "id": "5",
+      "requirement": "User can search patient by name",
+      "title": "Positive Patient Search Test",
+      "preconditions": "No preconditions",
+      "steps": [
+        "Step 1: Enter valid patient name"
+      ],
+      "expected_result": "System returns patient profile",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "6",
+      "requirement": "User can search patient by name",
+      "title": "Negative Patient Search Test - Invalid Name",
+      "preconditions": "No preconditions",
+      "steps": [
+        "Step 1: Enter invalid patient name"
+      ],
+      "expected_result": "System returns no result",
+      "priority": "Medium",
+      "test_type": "Negative"
+    },
+    {
+      "id": "7",
+      "requirement": "User can search patient by SSN",
+      "title": "Positive Patient Search Test - SSN",
+      "preconditions": "No preconditions",
+      "steps": [
+        "Step 1: Enter valid patient SSN"
+      ],
+      "expected_result": "System returns patient profile",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "8",
+      "requirement": "User can search patient by SSN",
+      "title": "Negative Patient Search Test - Invalid SSN",
+      "preconditions": "No preconditions",
+      "steps": [
+        "Step 1: Enter invalid patient SSN"
+      ],
+      "expected_result": "System returns no result",
+      "priority": "Medium",
+      "test_type": "Negative"
+    },
+    {
+      "id": "9",
+      "requirement": "User can open patient profile",
+      "title": "Positive Patient Profile Test",
+      "preconditions": "No preconditions",
+      "steps": [
+        "Step 1: Open patient profile"
+      ],
+      "expected_result": "System displays patient demographics and visit history",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "10",
+      "requirement": "User can open patient profile",
+      "title": "Negative Patient Profile Test - Invalid Patient",
+      "preconditions": "No preconditions",
+      "steps": [
+        "Step 1: Open invalid patient profile"
+      ],
+      "expected_result": "System returns no result or error message",
+      "priority": "Medium",
+      "test_type": "Negative"
+    },
+    {
+      "id": "11",
+      "requirement": "User can view patient demographics",
+      "title": "Positive Patient Demographics Test",
+      "preconditions": "No preconditions",
+      "steps": [
+        "Step 1: View patient demographics"
+      ],
+      "expected_result": "System displays patient demographics",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "12",
+      "requirement": "User can view patient visit history",
+      "title": "Positive Patient Visit History Test",
+      "preconditions": "No preconditions",
+      "steps": [
+        "Step 1: View patient visit history"
+      ],
+      "expected_result": "System displays patient visit history",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "13",
+      "requirement": "User can open encounter record",
+      "title": "Positive Encounter Record Test",
+      "preconditions": "No preconditions",
+      "steps": [
+        "Step 1: Open encounter record"
+      ],
+      "expected_result": "System displays encounter record details",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "14",
+      "requirement": "User can view medical history",
+      "title": "Positive Medical History Test",
+      "preconditions": "No preconditions",
+      "steps": [
+        "Step 1: View patient medical history"
+      ],
+      "expected_result": "System displays patient medical history",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "15",
+      "requirement": "User can view prescriptions",
+      "title": "Positive Prescription Test",
+      "preconditions": "No preconditions",
+      "steps": [
+        "Step 1: View patient prescriptions"
+      ],
+      "expected_result": "System displays patient prescriptions",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "16",
+      "requirement": "Add clinical notes",
+      "title": "Positive Clinical Notes Test",
+      "preconditions": "No preconditions",
+      "steps": [
+        "Step 1: Add clinical notes"
+      ],
+      "expected_result": "System adds clinical notes successfully",
+      "priority": "Low",
+      "test_type": "Positive"
+    },
+    {
+      "id": "17",
+      "requirement": "Prescribe medication",
+      "title": "Positive Prescription Test - Medication",
+      "preconditions": "No preconditions",
+      "steps": [
+        "Step 1: Prescribe medication"
+      ],
+      "expected_result": "System prescribes medication successfully",
+      "priority": "Low",
+      "test_type": "Positive"
+    },
+    {
+      "id": "18",
+      "requirement": "Allergy checking",
+      "title": "Positive Allergy Checking Test",
+      "preconditions": "No preconditions",
+      "steps": [
+        "Step 1: Check for allergies"
+      ],
+      "expected_result": "System checks for allergies successfully",
+      "priority": "Low",
+      "test_type": "Positive"
+    },
+    {
+      "id": "19",
+      "requirement": "Appointment overview",
+      "title": "Positive Appointment Overview Test",
+      "preconditions": "No preconditions",
+      "steps": [
+        "Step 1: View appointment overview"
+      ],
+      "expected_result": "System displays appointment overview",
+      "priority": "Low",
+      "test_type": "Positive"
+    },
+    {
+      "id": "20",
+      "requirement": "Access control for patients",
+      "title": "Positive Patient Access Control Test",
+      "preconditions": "No preconditions",
+      "steps": [
+        "Step 1: Verify patient access"
+      ],
+      "expected_result": "System verifies patient access successfully",
+      "priority": "Low",
+      "test_type": "Positive"
+    }
+  ]
+}

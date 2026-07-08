@@ -1,0 +1,240 @@
+{
+  "tests": [
+    {
+      "id": "1",
+      "requirement": "User can log in to system",
+      "title": "Successful login",
+      "preconditions": "No preconditions",
+      "steps": [
+        {
+          "step": "Enter valid username and password"
+        },
+        {
+          "step": "Click the 'Log In' button"
+        }
+      ],
+      "expected_result": "System logs user in successfully",
+      "priority": "High",
+      "test_type": "Positive"
+    },
+    {
+      "id": "2",
+      "requirement": "User can log in to system",
+      "title": "Failed login with invalid credentials",
+      "preconditions": "Invalid username and password",
+      "steps": [
+        {
+          "step": "Enter invalid username and password"
+        },
+        {
+          "step": "Click the 'Log In' button"
+        }
+      ],
+      "expected_result": "System rejects invalid login attempt",
+      "priority": "High",
+      "test_type": "Negative"
+    },
+    {
+      "id": "3",
+      "requirement": "User can search patient by name",
+      "title": "Successful patient search by name",
+      "preconditions": "Valid patient name exists in system",
+      "steps": [
+        {
+          "step": "Enter valid patient name in search bar"
+        },
+        {
+          "step": "Click the 'Search' button"
+        }
+      ],
+      "expected_result": "System returns patient profile with matching name",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "4",
+      "requirement": "User can search patient by SSN",
+      "title": "Successful patient search by SSN",
+      "preconditions": "Valid patient SSN exists in system",
+      "steps": [
+        {
+          "step": "Enter valid patient SSN in search bar"
+        },
+        {
+          "step": "Click the 'Search' button"
+        }
+      ],
+      "expected_result": "System returns patient profile with matching SSN",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "5",
+      "requirement": "User can open patient profile",
+      "title": "Successful patient profile opening",
+      "preconditions": "Valid patient exists in system",
+      "steps": [
+        {
+          "step": "Search for patient and select their profile"
+        }
+      ],
+      "expected_result": "System displays patient profile with demographics and visit history",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "6",
+      "requirement": "User can view patient demographics",
+      "title": "Successful patient demographics viewing",
+      "preconditions": "Valid patient exists in system",
+      "steps": [
+        {
+          "step": "Open patient profile and select 'Demographics' tab"
+        }
+      ],
+      "expected_result": "System displays patient demographics information",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "7",
+      "requirement": "User can view patient visit history",
+      "title": "Successful patient visit history viewing",
+      "preconditions": "Valid patient exists in system",
+      "steps": [
+        {
+          "step": "Open patient profile and select 'Visit History' tab"
+        }
+      ],
+      "expected_result": "System displays patient visit history information",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "8",
+      "requirement": "User can open encounter record",
+      "title": "Successful encounter record opening",
+      "preconditions": "Valid encounter exists in system",
+      "steps": [
+        {
+          "step": "Search for encounter and select its record"
+        }
+      ],
+      "expected_result": "System displays encounter record with medical history and prescriptions",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "9",
+      "requirement": "User can view medical history",
+      "title": "Successful medical history viewing",
+      "preconditions": "Valid patient exists in system",
+      "steps": [
+        {
+          "step": "Open encounter record and select 'Medical History' tab"
+        }
+      ],
+      "expected_result": "System displays patient medical history information",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "10",
+      "requirement": "User can view prescriptions",
+      "title": "Successful prescription viewing",
+      "preconditions": "Valid patient exists in system",
+      "steps": [
+        {
+          "step": "Open encounter record and select 'Prescriptions' tab"
+        }
+      ],
+      "expected_result": "System displays patient prescription information",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "11",
+      "requirement": "Add clinical notes",
+      "title": "Successful clinical note addition",
+      "preconditions": "Valid encounter exists in system",
+      "steps": [
+        {
+          "step": "Open encounter record and add new clinical note"
+        }
+      ],
+      "expected_result": "System adds new clinical note to patient's medical history",
+      "priority": "Low",
+      "test_type": "Positive"
+    },
+    {
+      "id": "12",
+      "requirement": "Prescribe medication",
+      "title": "Successful prescription addition",
+      "preconditions": "Valid patient exists in system",
+      "steps": [
+        {
+          "step": "Open encounter record and prescribe new medication"
+        }
+      ],
+      "expected_result": "System adds new prescription to patient's medical history",
+      "priority": "Low",
+      "test_type": "Positive"
+    },
+    {
+      "id": "13",
+      "requirement": "Allergy checking",
+      "title": "Successful allergy checking",
+      "preconditions": "Valid patient exists in system",
+      "steps": [
+        {
+          "step": "Open encounter record and check for allergies"
+        }
+      ],
+      "expected_result": "System displays patient's known allergies",
+      "priority": "Low",
+      "test_type": "Positive"
+    },
+    {
+      "id": "14",
+      "requirement": "Appointment overview",
+      "title": "Successful appointment overview",
+      "preconditions": "Valid patient exists in system",
+      "steps": [
+        {
+          "step": "Open patient profile and select 'Appointments' tab"
+        }
+      ],
+      "expected_result": "System displays patient's upcoming appointments",
+      "priority": "Low",
+      "test_type": "Positive"
+    },
+    {
+      "id": "15",
+      "requirement": "Access control for patients",
+      "title": "Successful access control testing",
+      "preconditions": "Valid patient exists in system",
+      "steps": [
+        {
+          "step": "Test patient's ability to view their own profile and medical history"
+        }
+      ],
+      "expected_result": "System restricts unauthorized access to patient's information",
+      "priority": "High",
+      "test_type": "Security"
+    },
+    {
+      "id": "16",
+      "requirement": "User can log out",
+      "title": "Successful logout testing",
+      "preconditions": "Valid user session exists",
+      "steps": [
+        {
+          "step": "Click the 'Log Out' button"
+        }
+      ],
+      "expected_result": "System logs user out successfully and terminates session",
+      "priority": "High",
+      "test_type": "Positive"
+    }
+  ]
+}

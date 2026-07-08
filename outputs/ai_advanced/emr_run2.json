@@ -1,0 +1,302 @@
+{
+  "tests": [
+    {
+      "id": "1",
+      "requirement": "User can log in to system",
+      "title": "Login Success",
+      "preconditions": "No preconditions",
+      "steps": [
+        {
+          "step": "Enter valid username and password"
+        },
+        {
+          "step": "Click the login button"
+        }
+      ],
+      "expected_result": "System logs user in successfully",
+      "priority": "High",
+      "test_type": "Positive"
+    },
+    {
+      "id": "2",
+      "requirement": "System rejects invalid login",
+      "title": "Invalid Login Attempt",
+      "preconditions": "No preconditions",
+      "steps": [
+        {
+          "step": "Enter invalid username and password"
+        },
+        {
+          "step": "Click the login button"
+        }
+      ],
+      "expected_result": "System displays an error message for invalid login attempt",
+      "priority": "High",
+      "test_type": "Negative"
+    },
+    {
+      "id": "3",
+      "requirement": "User can search patient by name",
+      "title": "Patient Search by Name",
+      "preconditions": "No preconditions",
+      "steps": [
+        {
+          "step": "Enter a valid patient name in the search bar"
+        },
+        {
+          "step": "Click the search button"
+        }
+      ],
+      "expected_result": "System displays a list of matching patients",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "4",
+      "requirement": "User can search patient by SSN",
+      "title": "Patient Search by SSN",
+      "preconditions": "No preconditions",
+      "steps": [
+        {
+          "step": "Enter a valid patient SSN in the search bar"
+        },
+        {
+          "step": "Click the search button"
+        }
+      ],
+      "expected_result": "System displays a list of matching patients",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "5",
+      "requirement": "User can open patient profile",
+      "title": "Open Patient Profile",
+      "preconditions": "No preconditions",
+      "steps": [
+        {
+          "step": "Search for a valid patient and click on their profile"
+        }
+      ],
+      "expected_result": "System displays the patient's profile information",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "6",
+      "requirement": "User can view patient demographics",
+      "title": "View Patient Demographics",
+      "preconditions": "Patient profile is open",
+      "steps": [
+        {
+          "step": "Click on the 'Demographics' tab in the patient profile"
+        }
+      ],
+      "expected_result": "System displays the patient's demographic information",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "7",
+      "requirement": "User can view patient visit history",
+      "title": "View Patient Visit History",
+      "preconditions": "Patient profile is open",
+      "steps": [
+        {
+          "step": "Click on the 'Visit History' tab in the patient profile"
+        }
+      ],
+      "expected_result": "System displays a list of the patient's past visits",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "8",
+      "requirement": "User can open encounter record",
+      "title": "Open Encounter Record",
+      "preconditions": "Patient visit history is displayed",
+      "steps": [
+        {
+          "step": "Click on a specific visit in the patient's visit history"
+        }
+      ],
+      "expected_result": "System displays the encounter record information",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "9",
+      "requirement": "User can view medical history",
+      "title": "View Medical History",
+      "preconditions": "Patient profile is open",
+      "steps": [
+        {
+          "step": "Click on the 'Medical History' tab in the patient profile"
+        }
+      ],
+      "expected_result": "System displays a list of the patient's past medical events",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "10",
+      "requirement": "User can view prescriptions",
+      "title": "View Prescriptions",
+      "preconditions": "Patient profile is open",
+      "steps": [
+        {
+          "step": "Click on the 'Prescriptions' tab in the patient profile"
+        }
+      ],
+      "expected_result": "System displays a list of the patient's current and past prescriptions",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "11",
+      "requirement": "Add clinical notes",
+      "title": "Add Clinical Notes",
+      "preconditions": "Patient encounter record is open",
+      "steps": [
+        {
+          "step": "Click on the 'Add Note' button in the patient's encounter record"
+        }
+      ],
+      "expected_result": "System allows user to add a new clinical note",
+      "priority": "Low",
+      "test_type": "Positive"
+    },
+    {
+      "id": "12",
+      "requirement": "Prescribe medication",
+      "title": "Prescribe Medication",
+      "preconditions": "Patient profile is open and patient has no active prescriptions",
+      "steps": [
+        {
+          "step": "Click on the 'Prescribe' button in the patient's profile"
+        }
+      ],
+      "expected_result": "System allows user to prescribe a new medication for the patient",
+      "priority": "Low",
+      "test_type": "Positive"
+    },
+    {
+      "id": "13",
+      "requirement": "Allergy checking",
+      "title": "Allergy Checking",
+      "preconditions": "Patient profile is open and patient has allergies recorded",
+      "steps": [
+        {
+          "step": "Click on the 'Allergies' tab in the patient's profile"
+        }
+      ],
+      "expected_result": "System displays a list of the patient's recorded allergies",
+      "priority": "Low",
+      "test_type": "Positive"
+    },
+    {
+      "id": "14",
+      "requirement": "Appointment overview",
+      "title": "Appointment Overview",
+      "preconditions": "Patient profile is open and patient has upcoming appointments scheduled",
+      "steps": [
+        {
+          "step": "Click on the 'Appointments' tab in the patient's profile"
+        }
+      ],
+      "expected_result": "System displays a list of the patient's upcoming appointments",
+      "priority": "Low",
+      "test_type": "Positive"
+    },
+    {
+      "id": "15",
+      "requirement": "Access control for patients",
+      "title": "Patient Access Control",
+      "preconditions": "No preconditions",
+      "steps": [
+        {
+          "step": "Log in as a patient and attempt to access restricted information"
+        }
+      ],
+      "expected_result": "System denies patient access to restricted information",
+      "priority": "High",
+      "test_type": "Security"
+    },
+    {
+      "id": "16",
+      "requirement": "User can log out",
+      "title": "Logout Success",
+      "preconditions": "No preconditions",
+      "steps": [
+        {
+          "step": "Click the logout button"
+        }
+      ],
+      "expected_result": "System logs user out successfully",
+      "priority": "High",
+      "test_type": "Positive"
+    },
+    {
+      "id": "17",
+      "requirement": "User can log in to system",
+      "title": "Login Success (Workflow)",
+      "preconditions": "No preconditions",
+      "steps": [
+        {
+          "step": "Enter valid username and password"
+        },
+        {
+          "step": "Click the login button"
+        }
+      ],
+      "expected_result": "System logs user in successfully and displays the patient's profile information",
+      "priority": "High",
+      "test_type": "Workflow"
+    },
+    {
+      "id": "18",
+      "requirement": "User can log out",
+      "title": "Logout Success (Error Handling)",
+      "preconditions": "No preconditions",
+      "steps": [
+        {
+          "step": "Click the logout button while attempting to access a restricted page"
+        }
+      ],
+      "expected_result": "System displays an error message and denies user access to the restricted page",
+      "priority": "High",
+      "test_type": "Error Handling"
+    },
+    {
+      "id": "19",
+      "requirement": "User can log in to system",
+      "title": "Login Success (Edge Case)",
+      "preconditions": "No preconditions",
+      "steps": [
+        {
+          "step": "Enter a valid username with an unusual character sequence"
+        },
+        {
+          "step": "Click the login button"
+        }
+      ],
+      "expected_result": "System logs user in successfully and displays the patient's profile information",
+      "priority": "Low",
+      "test_type": "Edge"
+    },
+    {
+      "id": "20",
+      "requirement": "User can log out",
+      "title": "Logout Success (Edge Case)",
+      "preconditions": "No preconditions",
+      "steps": [
+        {
+          "step": "Click the logout button while attempting to access a restricted page with an unusual character sequence"
+        }
+      ],
+      "expected_result": "System displays an error message and denies user access to the restricted page",
+      "priority": "Low",
+      "test_type": "Edge"
+    }
+  ]
+}

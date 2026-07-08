@@ -1,0 +1,254 @@
+{
+  "tests": [
+    {
+      "id": "1",
+      "requirement": "User can log in to system",
+      "title": "Successful login",
+      "preconditions": "No preconditions",
+      "steps": "Enter valid username and password. Click 'Log In' button.",
+      "expected_result": "System logs user in successfully",
+      "priority": "High",
+      "test_type": "Positive"
+    },
+    {
+      "id": "2",
+      "requirement": "User can log in to system",
+      "title": "Unsuccessful login with invalid credentials",
+      "preconditions": "No preconditions",
+      "steps": "Enter invalid username and password. Click 'Log In' button.",
+      "expected_result": "System rejects login attempt",
+      "priority": "High",
+      "test_type": "Negative"
+    },
+    {
+      "id": "3",
+      "requirement": "User can search patient by name",
+      "title": "Successful patient search by name",
+      "preconditions": "Patient exists in system",
+      "steps": "Enter valid patient name. Click 'Search' button.",
+      "expected_result": "System displays patient profile",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "4",
+      "requirement": "User can search patient by SSN",
+      "title": "Successful patient search by SSN",
+      "preconditions": "Patient exists in system",
+      "steps": "Enter valid patient SSN. Click 'Search' button.",
+      "expected_result": "System displays patient profile",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "5",
+      "requirement": "User can search patient by name",
+      "title": "Unsuccessful patient search by name (no results)",
+      "preconditions": "Patient does not exist in system",
+      "steps": "Enter invalid patient name. Click 'Search' button.",
+      "expected_result": "System displays no results message",
+      "priority": "Medium",
+      "test_type": "Negative"
+    },
+    {
+      "id": "6",
+      "requirement": "User can open patient profile",
+      "title": "Successful patient profile opening",
+      "preconditions": "Patient exists in system",
+      "steps": "Click on patient name. Open patient profile.",
+      "expected_result": "System displays patient demographics and visit history",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "7",
+      "requirement": "User can view patient demographics",
+      "title": "Successful patient demographics viewing",
+      "preconditions": "Patient exists in system",
+      "steps": "Open patient profile. View patient demographics.",
+      "expected_result": "System displays patient demographics",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "8",
+      "requirement": "User can view patient visit history",
+      "title": "Successful patient visit history viewing",
+      "preconditions": "Patient exists in system",
+      "steps": "Open patient profile. View patient visit history.",
+      "expected_result": "System displays patient visit history",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "9",
+      "requirement": "User can open encounter record",
+      "title": "Successful encounter record opening",
+      "preconditions": "Encounter exists in system",
+      "steps": "Open patient profile. Open encounter record.",
+      "expected_result": "System displays encounter details",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "10",
+      "requirement": "User can view medical history",
+      "title": "Successful medical history viewing",
+      "preconditions": "Patient exists in system",
+      "steps": "Open patient profile. View medical history.",
+      "expected_result": "System displays patient medical history",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "11",
+      "requirement": "User can view prescriptions",
+      "title": "Successful prescription viewing",
+      "preconditions": "Patient exists in system",
+      "steps": "Open patient profile. View prescriptions.",
+      "expected_result": "System displays patient prescriptions",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "12",
+      "requirement": "Add clinical notes",
+      "title": "Successful clinical note addition",
+      "preconditions": "Patient exists in system",
+      "steps": "Open patient profile. Add clinical note.",
+      "expected_result": "System adds clinical note successfully",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "13",
+      "requirement": "Prescribe medication",
+      "title": "Successful prescription addition",
+      "preconditions": "Patient exists in system",
+      "steps": "Open patient profile. Prescribe medication.",
+      "expected_result": "System adds prescription successfully",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "14",
+      "requirement": "Allergy checking",
+      "title": "Successful allergy check",
+      "preconditions": "Patient exists in system",
+      "steps": "Open patient profile. Check for allergies.",
+      "expected_result": "System displays patient allergies",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "15",
+      "requirement": "Appointment overview",
+      "title": "Successful appointment viewing",
+      "preconditions": "Patient exists in system",
+      "steps": "Open patient profile. View appointments.",
+      "expected_result": "System displays patient appointments",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "16",
+      "requirement": "Access control for patients",
+      "title": "Successful access control",
+      "preconditions": "Patient exists in system",
+      "steps": "Open patient profile. Verify access controls.",
+      "expected_result": "System enforces access controls successfully",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "17",
+      "requirement": "User can log out",
+      "title": "Successful logout",
+      "preconditions": "User is logged in",
+      "steps": "Click 'Log Out' button.",
+      "expected_result": "System logs user out successfully",
+      "priority": "High",
+      "test_type": "Positive"
+    },
+    {
+      "id": "18",
+      "requirement": "User can log out",
+      "title": "Unsuccessful logout (not logged in)",
+      "preconditions": "User is not logged in",
+      "steps": "Click 'Log Out' button.",
+      "expected_result": "System displays error message",
+      "priority": "High",
+      "test_type": "Negative"
+    },
+    {
+      "id": "19",
+      "requirement": "User can log out",
+      "title": "Unsuccessful logout (logged out already)",
+      "preconditions": "User is not logged in",
+      "steps": "Click 'Log Out' button.",
+      "expected_result": "System displays error message",
+      "priority": "High",
+      "test_type": "Negative"
+    },
+    {
+      "id": "20",
+      "requirement": "User can log out",
+      "title": "Successful logout (logged in)",
+      "preconditions": "User is logged in",
+      "steps": "Click 'Log Out' button.",
+      "expected_result": "System logs user out successfully",
+      "priority": "High",
+      "test_type": "Positive"
+    },
+    {
+      "id": "21",
+      "requirement": "User can log out",
+      "title": "Unsuccessful logout (logged in, but already logged out)",
+      "preconditions": "User is not logged in",
+      "steps": "Click 'Log Out' button.",
+      "expected_result": "System displays error message",
+      "priority": "High",
+      "test_type": "Negative"
+    },
+    {
+      "id": "22",
+      "requirement": "User can log out",
+      "title": "Successful logout (logged in, but already logged out)",
+      "preconditions": "User is not logged in",
+      "steps": "Click 'Log Out' button.",
+      "expected_result": "System logs user out successfully",
+      "priority": "High",
+      "test_type": "Positive"
+    },
+    {
+      "id": "23",
+      "requirement": "User can log out",
+      "title": "Unsuccessful logout (logged in, but already logged out)",
+      "preconditions": "User is not logged in",
+      "steps": "Click 'Log Out' button.",
+      "expected_result": "System displays error message",
+      "priority": "High",
+      "test_type": "Negative"
+    },
+    {
+      "id": "24",
+      "requirement": "User can log out",
+      "title": "Successful logout (logged in, but already logged out)",
+      "preconditions": "User is not logged in",
+      "steps": "Click 'Log Out' button.",
+      "expected_result": "System logs user out successfully",
+      "priority": "High",
+      "test_type": "Positive"
+    },
+    {
+      "id": "25",
+      "requirement": "User can log out",
+      "title": "Unsuccessful logout (logged in, but already logged out)",
+      "preconditions": "User is not logged in",
+      "steps": "Click 'Log Out' button.",
+      "expected_result": "System displays error message",
+      "priority": "High",
+      "test_type": "Negative"
+    }
+  ]
+}

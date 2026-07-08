@@ -1,0 +1,244 @@
+{
+  "tests": [
+    {
+      "id": "1",
+      "requirement": "User can log in with valid credentials",
+      "title": "Valid login test",
+      "preconditions": "No preconditions",
+      "steps": "Step 1: Enter valid username and password\nStep 2: Click login button",
+      "expected_result": "System logs user in successfully",
+      "priority": "High",
+      "test_type": "Positive"
+    },
+    {
+      "id": "2",
+      "requirement": "User can log out successfully",
+      "title": "Valid logout test",
+      "preconditions": "User is logged in",
+      "steps": "Step 1: Click logout button\nStep 2: Verify user is logged out",
+      "expected_result": "System logs user out successfully",
+      "priority": "High",
+      "test_type": "Positive"
+    },
+    {
+      "id": "3",
+      "requirement": "System rejects invalid login",
+      "title": "Invalid login test",
+      "preconditions": "No preconditions",
+      "steps": "Step 1: Enter invalid username and password\nStep 2: Click login button",
+      "expected_result": "System rejects invalid login attempt",
+      "priority": "High",
+      "test_type": "Negative"
+    },
+    {
+      "id": "4",
+      "requirement": "User can browse available courses",
+      "title": "Course browsing test",
+      "preconditions": "No preconditions",
+      "steps": "Step 1: Access course list\nStep 2: Verify available courses are displayed",
+      "expected_result": "System displays available courses",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "5",
+      "requirement": "User can search for courses",
+      "title": "Course search test",
+      "preconditions": "No preconditions",
+      "steps": "Step 1: Enter valid search query\nStep 2: Click search button\nStep 3: Verify search results",
+      "expected_result": "System returns relevant search results",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "6",
+      "requirement": "Search returns no results for invalid query",
+      "title": "Invalid course search test",
+      "preconditions": "No preconditions",
+      "steps": "Step 1: Enter invalid search query\nStep 2: Click search button\nStep 3: Verify no results are displayed",
+      "expected_result": "System returns no search results for invalid query",
+      "priority": "Medium",
+      "test_type": "Negative"
+    },
+    {
+      "id": "7",
+      "requirement": "User can enroll in course",
+      "title": "Course enrollment test",
+      "preconditions": "No preconditions",
+      "steps": "Step 1: Access course details\nStep 2: Click enroll button\nStep 3: Verify user is enrolled",
+      "expected_result": "System enrolls user in course successfully",
+      "priority": "High",
+      "test_type": "Positive"
+    },
+    {
+      "id": "8",
+      "requirement": "System prevents double enrollment",
+      "title": "Double enrollment test",
+      "preconditions": "User is already enrolled in course",
+      "steps": "Step 1: Attempt to enroll again\nStep 2: Verify system prevents double enrollment",
+      "expected_result": "System prevents user from enrolling twice",
+      "priority": "High",
+      "test_type": "Negative"
+    },
+    {
+      "id": "9",
+      "requirement": "User can open enrolled course",
+      "title": "Course access test",
+      "preconditions": "User is enrolled in course",
+      "steps": "Step 1: Access course materials\nStep 2: Verify user has access to course",
+      "expected_result": "System allows user to access enrolled course",
+      "priority": "High",
+      "test_type": "Positive"
+    },
+    {
+      "id": "10",
+      "requirement": "User can view assignment list",
+      "title": "Assignment list test",
+      "preconditions": "No preconditions",
+      "steps": "Step 1: Access course materials\nStep 2: Verify assignment list is displayed",
+      "expected_result": "System displays assignment list successfully",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "11",
+      "requirement": "Access restrictions for non-enrolled users",
+      "title": "Non-enrolled user access test",
+      "preconditions": "User is not enrolled in course",
+      "steps": "Step 1: Attempt to access course materials\nStep 2: Verify system restricts access",
+      "expected_result": "System prevents non-enrolled users from accessing course",
+      "priority": "High",
+      "test_type": "Negative"
+    },
+    {
+      "id": "12",
+      "requirement": "Session timeout handling",
+      "title": "Session timeout test",
+      "preconditions": "User is logged in",
+      "steps": "Step 1: Simulate session timeout\nStep 2: Verify system handles session timeout",
+      "expected_result": "System handles session timeout successfully",
+      "priority": "Medium",
+      "test_type": "Positive"
+    },
+    {
+      "id": "13",
+      "requirement": "Password reset flow",
+      "title": "Password reset test",
+      "preconditions": "User is logged in",
+      "steps": "Step 1: Initiate password reset\nStep 2: Verify password reset process",
+      "expected_result": "System allows user to reset password successfully",
+      "priority": "High",
+      "test_type": "Positive"
+    },
+    {
+      "id": "14",
+      "requirement": "User can log out successfully",
+      "title": "Valid logout test (edge case)",
+      "preconditions": "User is logged in",
+      "steps": "Step 1: Click logout button\nStep 2: Verify user is logged out",
+      "expected_result": "System logs user out successfully",
+      "priority": "High",
+      "test_type": "Edge"
+    },
+    {
+      "id": "15",
+      "requirement": "User can log in with valid credentials (edge case)",
+      "title": "Valid login test (edge case)",
+      "preconditions": "No preconditions",
+      "steps": "Step 1: Enter valid username and password\nStep 2: Click login button",
+      "expected_result": "System logs user in successfully",
+      "priority": "High",
+      "test_type": "Edge"
+    },
+    {
+      "id": "16",
+      "requirement": "User can browse available courses (edge case)",
+      "title": "Course browsing test (edge case)",
+      "preconditions": "No preconditions",
+      "steps": "Step 1: Access course list\nStep 2: Verify available courses are displayed",
+      "expected_result": "System displays available courses",
+      "priority": "Medium",
+      "test_type": "Edge"
+    },
+    {
+      "id": "17",
+      "requirement": "User can search for courses (edge case)",
+      "title": "Course search test (edge case)",
+      "preconditions": "No preconditions",
+      "steps": "Step 1: Enter valid search query\nStep 2: Click search button\nStep 3: Verify search results",
+      "expected_result": "System returns relevant search results",
+      "priority": "Medium",
+      "test_type": "Edge"
+    },
+    {
+      "id": "18",
+      "requirement": "User can enroll in course (edge case)",
+      "title": "Course enrollment test (edge case)",
+      "preconditions": "No preconditions",
+      "steps": "Step 1: Access course details\nStep 2: Click enroll button\nStep 3: Verify user is enrolled",
+      "expected_result": "System enrolls user in course successfully",
+      "priority": "High",
+      "test_type": "Edge"
+    },
+    {
+      "id": "19",
+      "requirement": "User can open enrolled course (edge case)",
+      "title": "Course access test (edge case)",
+      "preconditions": "User is enrolled in course",
+      "steps": "Step 1: Access course materials\nStep 2: Verify user has access to course",
+      "expected_result": "System allows user to access enrolled course",
+      "priority": "High",
+      "test_type": "Edge"
+    },
+    {
+      "id": "20",
+      "requirement": "User can view assignment list (edge case)",
+      "title": "Assignment list test (edge case)",
+      "preconditions": "No preconditions",
+      "steps": "Step 1: Access course materials\nStep 2: Verify assignment list is displayed",
+      "expected_result": "System displays assignment list successfully",
+      "priority": "Medium",
+      "test_type": "Edge"
+    },
+    {
+      "id": "21",
+      "requirement": "User can log out successfully (edge case)",
+      "title": "Valid logout test (edge case)",
+      "preconditions": "User is logged in",
+      "steps": "Step 1: Click logout button\nStep 2: Verify user is logged out",
+      "expected_result": "System logs user out successfully",
+      "priority": "High",
+      "test_type": "Edge"
+    },
+    {
+      "id": "22",
+      "requirement": "User can log in with valid credentials (edge case)",
+      "title": "Valid login test (edge case)",
+      "preconditions": "No preconditions",
+      "steps": "Step 1: Enter valid username and password\nStep 2: Click login button",
+      "expected_result": "System logs user in successfully",
+      "priority": "High",
+      "test_type": "Edge"
+    },
+    {
+      "id": "23",
+      "requirement": "User can browse available courses (edge case)",
+      "title": "Course browsing test (edge case)",
+      "preconditions": "No preconditions",
+      "steps": "Step 1: Access course list\nStep 2: Verify available courses are displayed",
+      "expected_result": "System displays available courses",
+      "priority": "Medium",
+      "test_type": "Edge"
+    },
+    {
+      "id": "24",
+      "requirement": "User can search for courses (edge case)",
+      "title": "Course search test (edge case)",
+      "preconditions": "No preconditions",
+      "steps": "Step 1: Enter valid search query\nStep 2: Click search button\nStep 3: Verify search results",
+      "expected_result": "System returns relevant search results",
+      "priority": "Medium",
+      "test_type": "Edge"
+    }
+  ]
+}
